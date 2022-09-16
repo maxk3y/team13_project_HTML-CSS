@@ -1,0 +1,143 @@
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.advantages {
+    background-color: #84A178;
+    padding-top: 42px;
+    padding-bottom: 60px;
+    @include tablet {
+      padding-top: 48px;
+      padding-bottom: 204px;      
+    }
+    @include desktop {
+      padding-top: 60px;
+    }
+
+    &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+
+      justify-content: space-between;
+    }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 230px;
+        color: #FCFCFC;
+        @include tablet {
+          max-width: 152px;
+          width: calc((100% - 160px)/3);
+        }
+        @include desktop {
+          max-width: 272px;
+          width: calc((100% - 160px)/3);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+            @include tablet {
+              margin-bottom: 0;
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 36px;
+            height: 36px;
+            padding: 7px;
+            background-image: url(../images/cow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #F8D24E;
+            border-radius: 50%;
+              @mixin retina{
+              background-image: url(../images/cow-2x.png);
+              }
+        }
+        &:nth-child(2)::before {
+            content: '';
+            width: 36px;
+            height: 36px;
+            padding: 7px;
+            background-image: url(../images/weight.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #F8D24E;
+            border-radius: 50%;
+              @mixin retina {
+              background-image: url(../images/weight-2x.png);
+              }
+        }
+        &:nth-child(3)::before {
+            content: '';
+            width: 36px;
+            height: 36px;
+            padding: 7px;
+            background-image: url(../images/ice.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #F8D24E;
+            border-radius: 50%;
+              @mixin retina {
+              background-image: url(../images/ice-2x.png);
+              }
+        }
+
+    }
+    &__namber {
+        font-family: 'Roboto', sans-serif;
+        @include font (700, 36px, 42px, .04em);
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        margin-top: 16px;
+        @include tablet {
+          font-family: 'Montserrat', sans-serif;
+          @include font (700, 48px, 59px, .04em);
+          text-transform: lowercase;
+          margin-top: 32px;
+          margin-bottom: 16px;
+        }
+        @include desktop {
+          @include font (700, 58px, 71px, .04em);
+          margin-top: 40px;
+          margin-bottom: 16px;
+        }
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        @include font (700, 12px, 20px, null);
+        @include tablet {
+          @include font (400, 14px, 24px, null);
+        }
+        @include desktop {
+          @include font (400, 16px, 28px, .02em);
+        }
+    }
+}

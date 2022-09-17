@@ -23,7 +23,7 @@
 }
 
 .advantages {
-    background-color: #84A178;
+    background-color: var(--secondary-color);
     padding-top: 42px;
     padding-bottom: 60px;
     @include tablet {
@@ -72,13 +72,13 @@
             width: 36px;
             height: 36px;
             padding: 7px;
-            background-image: url(../images/cow.png);
+            background-image: url(../images/advantages/cow.png);
             background-repeat: no-repeat;
             background-position: center;
-            background-color: #F8D24E;
+            background-color: var(--primary-color);
             border-radius: 50%;
               @mixin retina{
-              background-image: url(../images/cow-2x.png);
+              background-image: url(../images/advantages/cow-2x.png);
               }
         }
         &:nth-child(2)::before {
@@ -86,13 +86,13 @@
             width: 36px;
             height: 36px;
             padding: 7px;
-            background-image: url(../images/weight.png);
+            background-image: url(../images/advantages/weight.png);
             background-repeat: no-repeat;
             background-position: center;
-            background-color: #F8D24E;
+            background-color: var(--primary-color);
             border-radius: 50%;
               @mixin retina {
-              background-image: url(../images/weight-2x.png);
+              background-image: url(../images/advantages/weight-2x.png);
               }
         }
         &:nth-child(3)::before {
@@ -100,13 +100,13 @@
             width: 36px;
             height: 36px;
             padding: 7px;
-            background-image: url(../images/ice.png);
+            background-image: url(../images/advantages/ice.png);
             background-repeat: no-repeat;
             background-position: center;
-            background-color: #F8D24E;
+            background-color: var(--primary-color);
             border-radius: 50%;
               @mixin retina {
-              background-image: url(../images/ice-2x.png);
+              background-image: url(../images/advantages/ice-2x.png);
               }
         }
 

@@ -1,0 +1,12 @@
+.buy {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgb(203, 26, 26);
+    &_window{
+        width: 280px;
+        height: auto;
+        background-color: #FCFCFC;
+    }
+}

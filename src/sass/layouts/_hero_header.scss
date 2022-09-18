@@ -306,7 +306,6 @@ font-style: normal;
 font-weight: 700;
 font-size: 48px;
 line-height: 59px;
-/* identical to box height */
 
 display: flex;
 align-items: center;
@@ -315,9 +314,9 @@ text-decoration: none;
 color: #FCFCFC;
   }
   .mob-menu {
-    // position: fixed;
+   
     width: 100vw;
-    // height: 100vh;
+  
     background-color: 
     rgba(151, 175, 141, 1);
   }

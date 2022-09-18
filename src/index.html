@@ -141,9 +141,66 @@
 
       <div class="contacts-btn">
         <button class="contacts-btn__locat" type="button">Our Locations</button>
-        <button class="contacts-btn__franch" type="button">Franchise</button>
+        <button class="contacts-btn__franch" data-modal-open type="button">
+          Franchise
+        </button>
       </div>
     </div>
+
+    <!-- modal franchise -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-frn">
+        <button class="modal-frn__btn-close" data-modal-close type="button">
+          <svg height="16" width="16">
+            <use href="/src/images/Vector_close.svg"></use>
+          </svg>
+        </button>
+        <h3 class="modal-frn__title">
+          Thank you for your interest in owning an Ice Cream shop
+        </h3>
+        <p class="modal-frn__paragr">
+          Due to the overwhelming volume of franchise requests we are not
+          accepting new franchisee applications at this time. Once the
+          application process resumes, we will contact you for further
+          information. Please fill out the contact information below and we will
+          reach out for additional information. We appreciate your patience.
+        </p>
+        <form>
+          <div class="modal-frn__input-list">
+            <input
+              type="text"
+              class="modal-frn__input-name"
+              required
+              placeholder="Name"
+            />
+
+            <input
+              type="tel"
+              class="modal-frn__input-tel"
+              required
+              placeholder="Phone"
+            />
+
+            <input
+              type="email"
+              class="modal-frn__input-email"
+              required
+              placeholder="Email"
+            />
+
+            <textarea
+              class="modal-frn__input-comment"
+              name="user-comment"
+              placeholder="Comment"
+              id=""
+            ></textarea>
+          </div>
+          <button type="submit" class="modal__btn-sub">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="/src/sass/modal.js/modal-franch.js"></script>
     <include src="./partials/contacts.html"></include>
   </body>
 </html>

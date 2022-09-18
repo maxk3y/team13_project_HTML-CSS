@@ -1,2 +1,0 @@
-{let e=0;!function t(){let l,i=document.getElementsByClassName("slideshow__item");for(l=0;l<i.length;l++)i[l].style.display="none";e++,e>i.length&&(e=1);i[e-1].style.display="block",setTimeout(t,7e3)}()}new Swiper(".swiper",{direction:"horizontal",loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});
-//# sourceMappingURL=index.defc8983.js.map

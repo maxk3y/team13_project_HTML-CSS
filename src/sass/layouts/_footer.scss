@@ -1,5 +1,7 @@
 .footer {
-background-color: var(--secondary-color);
+background-color: var(--secondary-color);}
+
+.footer__container {
 @media screen and (min-width: 768px) {
 display: flex;
 flex-wrap: wrap;}}
@@ -74,7 +76,7 @@ font-size: 58px;}}
 
 .footer__contacts--container {
 @media screen and (min-width: 768px) {
-margin-left: auto;
+margin-left:auto;
 }}
 
 

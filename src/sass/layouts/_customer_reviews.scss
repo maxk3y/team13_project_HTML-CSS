@@ -9,6 +9,7 @@
 .customer-reviews__image {
   width: 100px;
   height: 100px;
+  margin-bottom: 27px;
 }
 .customer-reviews__field {
   @extend %align-list;
@@ -44,7 +45,7 @@
 .swiper {
   margin: 0 auto;
   width: 1050px;
-  height: 250px;
+  height: 380px;
 }
 .swiper-wrapper {
 }

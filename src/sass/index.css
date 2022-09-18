@@ -1,33 +1,122 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #f8d24e;
+  --secondary-color: #84a178;
+  --tertiary-color: #0a8817;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .about {
   background-color: var(--secondary-color);
   padding-top: 60px;
   padding-bottom: 42px;
-  @include mobile {
+}
+@media screen and (min-width: 480px) {
+  .about {
     padding-top: 60px;
     padding-bottom: 42px;
   }
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about {
     padding-bottom: 53px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about {
     padding-bottom: 90px;
   }
 }
+
 .about__pre-title {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: 700;
   line-height: 1.22;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__pre-title {
     font-size: 22px;
     font-weight: 800;
     line-height: 1.23;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__pre-title {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.23;
@@ -40,16 +129,20 @@
   text-transform: uppercase;
   color: #fcfcfc;
   margin-top: 12px;
-  font-family: 'Seymour One';
+  font-family: "Seymour One";
   font-size: 30px;
   font-weight: 400;
   line-height: 38px;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__title {
     letter-spacing: 0.06em;
     font-size: 34px;
     line-height: 1.26;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__title {
     letter-spacing: 0.06em;
     font-size: 36px;
     line-height: 1.25;
@@ -62,36 +155,45 @@
   text-align: center;
   padding-right: 30px;
   padding-left: 30px;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__text {
     margin-top: 9px;
     text-align: left;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__text {
     margin-top: 90px;
     text-align: left;
   }
 }
+
 .about__text-item-first {
   letter-spacing: 0.04em;
   color: #fcfcfc;
   text-align: center;
   width: 100%;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 400;
   line-height: 1.76;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__text-item-first {
     text-align: left;
     width: 334px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__text-item-first {
     width: 463px;
     font-size: 16px;
   }
 }
 
 .about__text-item {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 12px;
   line-height: 1.62;
@@ -100,13 +202,17 @@
   letter-spacing: 0.04em;
   width: 100%;
   margin-top: 4px;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__text-item {
     line-height: 1.76;
     width: 334px;
     margin-top: 8px;
     text-align: left;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__text-item {
     width: 463px;
     font-size: 14px;
     line-height: 1.94;
@@ -114,20 +220,28 @@
     text-align: left;
   }
 }
+
 .about__img {
   display: flex;
   justify-content: center;
   width: 100%;
-  @include tablet {
-    display: block;
-  }
-  @include desktop {
+}
+@media screen and (min-width: 768px) {
+  .about__img {
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .about__img {
+    display: block;
+  }
+}
+
 .about__text-item-last {
   display: none;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__text-item-last {
     display: inline;
     min-width: 336px;
     font-size: 12px;
@@ -137,7 +251,9 @@
     font-weight: 400;
     margin-top: 8px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__text-item-last {
     display: inline;
     color: #fcfcfc;
     min-width: 463px;
@@ -154,15 +270,12 @@
   height: 280px;
   left: 20px;
   top: 2673;
-  background: linear-gradient(
-      0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)
-    ),
-    #d9d9d9;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   border-radius: 140px;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__thumb {
     width: 335px;
     height: 330px;
     left: 32px;
@@ -170,37 +283,49 @@
     box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
     border-radius: 166px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__thumb {
     width: 500px;
     height: 500px;
-    background: linear-gradient(0deg, #f8d24eb3, #f8d24eb3), #d9d9d9;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7019607843), rgba(248, 210, 78, 0.7019607843)), #d9d9d9;
     border-radius: 250px;
     top: 1916px;
     left: 16px;
-    box-shadow: 0 8px 30px #99721740;
+    box-shadow: 0 8px 30px rgba(153, 114, 23, 0.2509803922);
   }
 }
 
 .about__image {
   position: relative;
   top: 22px;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__image {
     top: 26px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__image {
     top: 39px;
   }
 }
+
 .about__btn-content {
   display: flex;
   justify-content: center;
-  @include tablet {
-    display: block;
-  }
-  @include desktop {
+}
+@media screen and (min-width: 768px) {
+  .about__btn-content {
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .about__btn-content {
+    display: block;
+  }
+}
+
 .about__btn {
   color: #131313;
   background-color: var(--primary-color);
@@ -212,43 +337,50 @@
   align-items: center;
   margin-top: 20px;
   padding: 12px 34px 12px 34px;
-  font-family: 'Montserrat, sans-serif';
+  font-family: "Montserrat, sans-serif";
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__btn {
     margin-top: 48px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__btn {
     margin-top: 48px;
     padding: 17px 38px 17px 34px;
   }
-  &:hover {
-    background-color: var(--tertiary-color);
-  }
-  &:focus {
-    background-color: var(--tertiary-color);
-    color: #fcfcfc;
-    outline: var(--tertiary-color);
-  }
-  &:disabled {
-    background-color: #ababab;
-    color: #131313;
-  }
 }
+.about__btn:hover {
+  background-color: var(--tertiary-color);
+}
+.about__btn:focus {
+  background-color: var(--tertiary-color);
+  color: #fcfcfc;
+  outline: var(--tertiary-color);
+}
+.about__btn:disabled {
+  background-color: #ababab;
+  color: #131313;
+}
+
 .about__content {
   margin-top: 32px;
   display: block;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .about__content {
     gap: 32px;
     margin-top: 72px;
     display: flex;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .about__content {
     gap: 100px;
     margin-top: 82px;
     display: flex;
@@ -259,7 +391,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  background-color: #0003;
+  background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   position: fixed;
   top: 0;
@@ -286,11 +418,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .modal {
     max-width: 568px;
     min-height: 449px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .modal {
     max-width: 568px;
     min-height: 449px;
   }
@@ -298,10 +434,14 @@
 
 .modal__content {
   padding: 0 29px 28px 29px;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .modal__content {
     padding: 0 60px 32px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .modal__content {
     padding: 0 60px 32px;
   }
 }
@@ -311,16 +451,20 @@
   color: #131313;
   justify-content: center;
   align-items: center;
-  font-family: 'Seymour One';
+  font-family: "Seymour One";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   line-height: 1.5;
   display: flex;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .modal__about__title {
     font-size: 20px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .modal__about__title {
     font-size: 20px;
   }
 }
@@ -329,7 +473,7 @@
   cursor: pointer;
   width: 20px;
   height: 20px;
-  background-color: #0000;
+  background-color: rgba(0, 0, 0, 0);
   border: 0;
   justify-content: center;
   align-items: center;
@@ -337,11 +481,15 @@
   margin-top: 12px;
   margin-right: 12px;
   margin-left: auto;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .modal__btn__close {
     margin-top: 20px;
     margin-right: 25px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .modal__btn__close {
     margin-top: 20px;
     margin-right: 25px;
   }
@@ -359,13 +507,17 @@
   width: 224px;
   height: 200px;
   border-radius: 10px;
-  @include tablet {
+}
+@media screen and (min-width: 768px) {
+  .video {
     width: 448px;
     height: 205px;
     margin-top: 32px;
     margin-bottom: 32px;
   }
-  @include desktop {
+}
+@media screen and (min-width: 1200px) {
+  .video {
     width: 448px;
     height: 205px;
     margin-top: 32px;
@@ -376,16 +528,78 @@
 .modal__text {
   color: #131313;
   text-align: left;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
-  @include tablet {
-    font-size: 16px;
-    text-align: center;
-  }
-  @include desktop {
+}
+@media screen and (min-width: 768px) {
+  .modal__text {
     font-size: 16px;
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal__text {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.gallery {
+  /* Fading animation */
+}
+.gallery .slideshow {
+  margin: auto;
+}
+.gallery .slideshow__item {
+  display: none;
+  position: relative;
+  top: -24px;
+}
+@media screen and (min-width: 768px) {
+  .gallery .slideshow__item {
+    top: -164px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery .slideshow__item {
+    top: -94px;
+  }
+}
+.gallery .slideshow__item img {
+  vertical-align: middle;
+  border-radius: 7.4px;
+}
+@media screen and (min-width: 768px) {
+  .gallery .slideshow__item img {
+    border-radius: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery .slideshow__item img {
+    border-radius: 24px;
+  }
+}
+.gallery .scale {
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+}
+@-webkit-keyframes scale {
+  from {
+    scale: 0.98;
+  }
+  to {
+    scale: 1;
+  }
+}
+@keyframes scale {
+  from {
+    scale: 0.98;
+  }
+  to {
+    scale: 1;
+  }
+}/*# sourceMappingURL=index.css.map */

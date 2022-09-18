@@ -1,0 +1,72 @@
+.customer-reviews {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.customer-reviews__box {
+  @extend %align-list;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.customer-reviews__image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 27px;
+}
+.customer-reviews__field {
+  @extend %align-list;
+  justify-content: center;
+  width: 968px;
+  height: 138px;
+  background-color: #84a178;
+  border-radius: 24px;
+}
+.customer-reviews__text {
+  width: 750px;
+  height: 52px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+  margin: 0 auto;
+}
+
+.customer-reviews__name {
+  margin-top: 32px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  color: #131313;
+}
+
+.swiper {
+  margin: 0 auto;
+  width: 1050px;
+  height: 380px;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+  //   display: flex;
+  //   gap: 5px;
+  //   right: 50%;
+  //   bottom: 10px;
+}
+.swiper-pagination-bullet {
+  background-color: #84a178;
+}
+.swiper-button-prev {
+  color: #84a178;
+}
+.swiper-button-next {
+  color: #84a178;
+}
+.swiper-scrollbar {
+}

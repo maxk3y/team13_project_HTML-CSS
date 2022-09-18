@@ -3,9 +3,12 @@
 .customer-reviews__box {
   @extend %align-list;
   justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
 }
 .customer-reviews__image {
+  width: 100px;
+  height: 100px;
 }
 .customer-reviews__field {
   @extend %align-list;
@@ -14,7 +17,6 @@
   height: 138px;
   background-color: #84a178;
   border-radius: 24px;
-  margin: 0 auto;
 }
 .customer-reviews__text {
   width: 750px;
@@ -29,24 +31,39 @@
   margin: 0 auto;
 }
 
+.customer-reviews__name {
+  margin-top: 32px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  color: #131313;
+}
+
 .swiper {
   margin: 0 auto;
-  width: 600px;
-  height: 300px;
+  width: 1050px;
+  height: 250px;
 }
 .swiper-wrapper {
 }
 .swiper-slide {
 }
 .swiper-pagination {
-  //   width: 12px;
-  //   height: 12px;
-  //   background-color: var(--secondary-color);
-  //   border-radius: 50%;
+  //   display: flex;
+  //   gap: 5px;
+  //   right: 50%;
+  //   bottom: 10px;
+}
+.swiper-pagination-bullet {
+  background-color: #84a178;
 }
 .swiper-button-prev {
+  color: #84a178;
 }
 .swiper-button-next {
+  color: #84a178;
 }
 .swiper-scrollbar {
 }

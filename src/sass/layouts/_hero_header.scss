@@ -601,15 +601,11 @@ color: #FCFCFC;
 }
 
 .buy_check:checked + .buy_offer-1 {
-       background-color: var(--primary-color);
+       background-color: #9CBE8FB2;
 }
 .buy_check:checked + .buy_offer-2 {
-       background-color: #9CBE8FB2;
+       background-color: var(--primary-color);
 }.buy_check:checked + .buy_offer-3 {
        background-color: #D5753FB2;
 }
-
-::-webkit-validation-bubble-message {
-            background-color: green;
-        }
 

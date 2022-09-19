@@ -74,5 +74,96 @@
                 
         </div>
     </section>
+
+
+
+    <!-- Modal -->
+    <section class="buy">
+  <div class="container">
+    <div class="buy_window">
+      <button class="buy_btn-close buy_btn" type="button">
+        <svg class="buy_btn-icon" width="16" heaght="16">
+          <use href=""></use>
+        </svg>
+      </button>
+      <h2 class="buy_title">Buy now</h2>
+      <form class="buy_form">
+        <ul class="buy_list">
+          <li class="buy_item">
+            <input
+              type="checkbox"
+              name="type_coffe"
+              value="true"
+              class="buy_check visually-hidden"
+              id="type_cream"
+            />
+            <label for="type_cream" class="buy_offer-1 buy_offer">
+              <div class="buy_offer-1-circle-1 buy_offer-circle"></div>
+              <span class="buy_offer-1-text">ice cream</span>
+            </label>
+          </li>
+          <li class="buy_item">
+            <input
+              type="checkbox"
+              name="type_coffe"
+              value="true"
+              class="buy_check visually-hidden"
+              id="type_ice"
+            />
+            <label for="type_ice" class="buy_offer-2 buy_offer">
+              <div class="buy_offer-2-circle-2 buy_offer-circle"></div>
+              <span class="buy_offer-1-text">ice coffee</span>
+            </label>
+          </li>
+          <li class="buy_item">
+            <input
+              type="checkbox"
+              name="type_coffe"
+              value="true"
+              class="buy_check visually-hidden"
+              id="type_milk"
+            />
+            <label for="type_milk" class="buy_offer-3 buy_offer">
+              <div class="buy_offer-3-circle-3 buy_offer-circle"></div>
+              <span class="buy_offer-1-text">milkshake</span>
+            </label>
+          </li>
+        </ul>
+        <div class="buy_field">
+          <input
+            type="text"
+            class="buy_input"
+            placeholder="Name"
+            name="user_name"
+            pattern="^[a-z0-9_-]{3,16}$"
+          />
+          <p class="buy_error">Enter valid data. Minimum three characters</p>
+        </div>
+        <div class="buy_field">
+          <input
+            type="text"
+            class="buy_input"
+            placeholder="Phone"
+            name="user_phone"
+            pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+          />
+          <p class="buy_error">Enter valid data. Example +38(044)555-55-45</p>
+        </div>
+        <div class="buy_field">
+          <textarea
+            type="text"
+            name="user_comment"
+            id="user_comment"
+            class="buy_input buy_comment"
+            placeholder="Comment"
+          ></textarea>
+          <p class="buy_error">Enter valid data</p>
+        </div>
+        <button type="submit" class="buy_btn-sub">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
     
 

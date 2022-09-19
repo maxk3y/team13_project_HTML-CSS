@@ -344,6 +344,7 @@ color: #FCFCFC;
     height: 100%;
     top: 0;
     z-index: 10;
+    @include transition('opacity, visibility');
     &_window{
         position: absolute;
         width: 280px;
@@ -355,6 +356,7 @@ color: #FCFCFC;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1);
+        @include transition('transform');
         @include tablet {
             width: 568px;
             height: auto;
@@ -362,16 +364,28 @@ color: #FCFCFC;
     }
     &_btn-close {
         position: absolute;
-        width: 16px;
-        height: 16px;
+        display: block;
+
         top: 8px;
         right: 8px;
-
-        border-radius: 50%;
+        background: inherit;
+        padding: 0;
+        border: none;
         @include tablet {
         top: 20px;
-        right: 20px;            
+        right: 20px;
+       
         }
+    }
+    &_close {
+        width: 9px;
+        height: 9px;
+        fill: #000000;
+        @include tablet {
+        width: 11px;
+        height: 11px;
+        }     
+
     }
     &_btn-sub {
         width: 114px;
@@ -466,12 +480,12 @@ color: #FCFCFC;
             top: -7px;
             width: 131.56px;
             height: 131.95px;
-            //background-image: url('../images/buy_now_modal/1_lr.png');
+            background-image: url('../images/buy_now_modal/1_lr.png');
             background-repeat: no-repeat;
             background-size: cover;
-/*             @include retina {
+            @include retina {
               background-image: url('../images/buy_now_modal/1_lr@2x.png');
-            } */
+            } 
         }
         }
         &-text {
@@ -494,12 +508,12 @@ color: #FCFCFC;
             top: -7px;
             width: 131.56px;
             height: 131.95px;
-            //background-image: url('../images/buy_now_modal/2_lr.png');
+            background-image: url('../images/buy_now_modal/2_lr.png');
             background-repeat: no-repeat;
             background-size: cover;
-/*             @include retina {
+             @include retina {
               background-image: url('../images/buy_now_modal/2_lr@2x.png');
-            } */
+            } 
         }
         }
         &-text {
@@ -523,12 +537,12 @@ color: #FCFCFC;
             top: -7px;
             width: 131.56px;
             height: 131.95px;
-            //background-image: url('../images/buy_now_modal/3_lr.png');
+            background-image: url('../images/buy_now_modal/3_lr.png');
             background-repeat: no-repeat;
             background-size: cover;
-/*             @include retina {
+             @include retina {
               background-image: url('../images/buy_now_modal/3_lr@2x.png');
-            } */
+            } 
         }
         }
         &-text {

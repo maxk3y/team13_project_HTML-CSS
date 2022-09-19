@@ -47,7 +47,7 @@
                   <li><a href="" class="header-link">Contact</a></li>
               </ul>
               
-            <button class="btn">Buy now ></button>
+            <button class="btn" type="button" buy-open>Buy now ></button>
         
           </header>
             <h1 class="hero-title">ice cream <br>
@@ -78,12 +78,12 @@
 
 
     <!-- Modal -->
-    <section class="buy">
+<section class="buy" buy-modal>
   <div class="container">
     <div class="buy_window">
-      <button class="buy_btn-close buy_btn" type="button">
-        <svg class="buy_btn-icon" width="16" heaght="16">
-          <use href=""></use>
+      <button class="buy_btn-close buy_btn" type="button" buy-close>
+        <svg class="buy_close" width="9" height="9">
+          <use href="./images/icomoon/SVG/close.svg#icon-close"></use>
         </svg>
       </button>
       <h2 class="buy_title">Buy now</h2>
@@ -137,7 +137,7 @@
             name="user_name"
             pattern="^[a-z0-9_-]{3,16}$"
           />
-          <p class="buy_error">Enter valid data. Minimum three characters</p>
+          <p class="buy_error">Minimum three characters</p>
         </div>
         <div class="buy_field">
           <input
@@ -147,7 +147,7 @@
             name="user_phone"
             pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
           />
-          <p class="buy_error">Enter valid data. Example +38(044)555-55-45</p>
+          <p class="buy_error">Example +38(044)555-55-45</p>
         </div>
         <div class="buy_field">
           <textarea

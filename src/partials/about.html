@@ -1,0 +1,118 @@
+<section class="about">
+      <div class="container">
+        <p class="about__pre-title">Tradition and love</p>
+        <h2 class="about__title">How it’s made?</h2>
+        <div class="about__content">
+          <div class="about__img">
+            <div class="about__thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about/cow_lr.png    1x,
+                    ./images/about/cow_lr@2x.png  2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/png"
+                /> 
+              <source
+                  srcset="
+                    ./images/about/cow_lr.webp  1x,
+                    ./images/about/cow_lr@2x.webp  2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+              />
+                <source
+                  srcset="
+                    ./images/about/cow_sm.png   1x,
+                    ./images/about/cow_sm@2x.png  2x
+                    ./images/about/cow_sm.webp   1x,
+                    ./images/about/cow_sm@2x.webp  2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/png"
+                />
+                <source
+                  srcset="
+                    ./images/about/cow_sm.webp   1x,
+                    ./images/about/cow_sm@2x.webp  2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about/cow_md.webp    1x,
+                    ./images/about/cow_md@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                   type="image/png"
+                />
+                <source
+                  srcset="
+                    ./images/about/cow_md.webp    1x,
+                    ./images/about/cow_md@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                   type="image/webp"
+                />
+                </picture> 
+            <img
+              src="./images/about/cow_lr.png"
+              alt="about__cow"
+              class="about__image"
+              width="490"
+              height="490"
+            />
+          </div>
+          </div>
+          <div class="about__text">
+            <p class="about__text-item-first">
+              Ice is a place where you will become not only a little happier,
+              but also healthier. Health is the main value for us, and we follow
+              it when creating our handmade desserts.
+            </p>
+            <p class="about__text-item">
+              We use traditional recipes and 100% natural ingredients. Our
+              products are so natural that they can be given to children from
+              the age of three years. Sweets lovers can expect 55 types of ice
+              cream, 15 types of coffee and 23 milkshakes.
+            </p>
+            <p class="about__text-item-last">
+              This is enough to choose ice cream and coffee for any mood!
+            </p>
+            <div class="about__btn-content">
+              <button class="button about__btn" type="button" data-modal-about-open>
+            Read more >
+          </button>
+            </div>
+          </div>
+      </div>
+
+      <div class="backdrop is-hidden" data-modal-about>
+        <div class="modal">
+          <button data-modal-about-close class="modal__btn__close" type="button">
+            <svg class="modal__btn__icon">
+              <use href="./images/icomoon/SVG/close.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal__content">
+            <h2 class="modal__about__title">How it’s made?</h2>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/6GWpfX8AqGc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p class="modal__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et
+          </p>
+        </div>
+      </div>
+          </div>
+        </section>

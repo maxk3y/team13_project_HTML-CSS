@@ -1,10 +1,10 @@
 
 
 // .container {
-//     width: 1200px;
-//    margin: 0 auto;
-//    padding: 0 16px;
-   
+  //     width: 1200px;
+  //    margin: 0 auto;
+  //    padding: 0 16px;
+     
   ul {
     list-style: none;
   }  
@@ -120,7 +120,7 @@
         
       }
       @include tablet {
-        height: 350px;
+        height: 415px;
         max-width: 768px;
         background-image:
         url(/src/images/hero_header/ice-cream_md.png),
@@ -130,7 +130,14 @@
         background-position:right 23px bottom -56px, bottom 13px left 32px, bottom;
       }
       @include desktop {
+        height: 664px;
         min-width: 1200px;
+        background-image:
+        url(/src/images/hero_header/ice-cream_lr.png),
+          url(/src/images/hero_header/more_ice-cream_lr.png),
+          url(/src/images/hero_header/dots_lr.png);
+        /* background-size: cover; */
+        background-position:right 23px bottom -100px, bottom 65px left 17px, bottom;
       }
   }
   .hero-title {
@@ -168,7 +175,12 @@ line-height: 33px;
 @include tablet {
     font-size: 24px;
 line-height: 13px;
-  }  
+width: 100%;
+  }
+  @include desktop {
+    font-size: 38px;
+line-height: 48px;
+  }
 
 
   }
@@ -188,6 +200,12 @@ line-height: 13px;
   text-align: center;
   margin-right: 12px;
   color: #131313;
+  @include desktop {
+    width: 134px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 18px;
+  }
   }
   .hero-link {
       font-family: 'Montserrat';
@@ -203,6 +221,10 @@ line-height: 13px;
   text-decoration-line: underline;
   
   color: #F8D24E;
+  @include desktop {
+    font-size: 14px;
+    line-height: 18px;
+  }
   }
   .hero-fl {
       margin-top: 32px;
@@ -224,7 +246,14 @@ line-height: 13px;
          margin-left: 185px;
         color: #FCFCFC;
       }
+     @include desktop {
+      font-size: 14px;
+      width: 200px;
+      height: 80px;
+      margin-top: 111px;
+      margin-left: 256px;
      
+     }
   }
   .for-numb {
       width: 52px;
@@ -240,6 +269,9 @@ line-height: 13px;
   }
   .spec {
     width: 48px;
+    @include desktop {
+    width: 79px;
+    }
   }
   .numbers {
     display: none;
@@ -262,7 +294,10 @@ text-align: right;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #131313;
-
+@include desktop {
+  font-size: 46px;
+  line-height: 56px;
+}
   }
 
   .mob-menu-nav-link {
@@ -271,7 +306,6 @@ font-style: normal;
 font-weight: 700;
 font-size: 48px;
 line-height: 59px;
-/* identical to box height */
 
 display: flex;
 align-items: center;
@@ -280,9 +314,9 @@ text-decoration: none;
 color: #FCFCFC;
   }
   .mob-menu {
-    // position: fixed;
+   
     width: 100vw;
-    // height: 100vh;
+  
     background-color: 
     rgba(151, 175, 141, 1);
   }

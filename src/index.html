@@ -14,187 +14,25 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- [SS] - [contacts] -->
+    <!-- [Ім'я студента] - [секція] -->
+    <!-- <include src="./partials/example.html"></include> -->
 
-    <div class="contacts">
-      <div class="contacts__bloks">
-        <div class="contacts__blok">
-          <p class="contacts__class style">CAFE</p>
+    <!-- [Ім'я студента] - [секція] -->
+    <include src="./partials/hero_header.html"></include>
 
-          <section class="contacts__location">
-            <p class="style">Chicago</p>
-            <a
-              class="contacts__coordinates style"
-              href="https://goo.gl/maps/ZogyzaojuUaDBqnX9"
-              target="_blank"
-              rel="nooper noreferrer nofollow"
-              >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
-            >
-          </section>
+    <include src="./partials/products.html"></include>
 
-          <section class="contacts-timetable">
-            <ul class="contacts-timetable__list style">
-              <li>Monday - Friday</li>
-              <li class="contacts-timetable__hours">06:00 AM - 10:00 PM</li>
-            </ul>
-            <ul class="style">
-              <li>Saturday - Sunday</li>
-              <li class="contacts-timetable__hours">08:00 AM - 16:00 PM</li>
-            </ul>
-          </section>
+    <include src="./partials/about.html"></include>
 
-          <section>
-            <ul class="contacts__communication style">
-              <li>
-                <a class="contacts__tel" href="tel:+61(0)383766284"
-                  >+61(0)383 766 284</a
-                >
-              </li>
-              <li>
-                <a href="mailto:noreply@envato.com"></a>noreply@envato.com
-              </li>
-            </ul>
-          </section>
-        </div>
-
-        <!-- section-2 -->
-
-        <div class="contacts__blok style">
-          <p class="contacts__class style">FOODTRUCK</p>
-          <section class="contacts__location">
-            <p class="style">Los Angeles</p>
-            <a
-              class="contacts__coordinates style"
-              href="https://goo.gl/maps/18xy3sSwKqxgJdo37"
-              target="_blank"
-              rel="nooper noreferrer nofollow"
-              >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
-            >
-          </section>
-
-          <section class="contacts-timetable">
-            <ul class="contacts-timetable__list style">
-              <li>Monday - Friday</li>
-              <li class="contacts-timetable__hours">06:00 AM - 10:00 PM</li>
-            </ul>
-            <ul class="style">
-              <li>Saturday - Sunday</li>
-              <li class="contacts-timetable__hours">08:00 AM - 16:00 PM</li>
-            </ul>
-          </section>
-
-          <section>
-            <ul class="contacts__communication style">
-              <li>
-                <a class="contacts__tel" href="tel:+61(0)383766284"
-                  >+61(0)383 766 284</a
-                >
-              </li>
-              <li>
-                <a href="mailto:noreply@envato.com"></a>noreply@envato.com
-              </li>
-            </ul>
-          </section>
-        </div>
-
-        <!-- section-3 -->
-
-        <div class="contacts__blok style">
-          <p class="contacts__class style">FOOD</p>
-          <section class="contacts__location">
-            <p class="style">New York</p>
-            <a
-              class="contacts__coordinates style"
-              href="https://goo.gl/maps/i2uUV1LUnW24uAX69"
-              target="_blank"
-              rel="nooper noreferrer nofollow"
-              >726 Sterling Pl, Brooklyn, NY 11222, USA</a
-            >
-          </section>
-
-          <section class="contacts-timetable">
-            <ul class="contacts-timetable__list style">
-              <li>Monday - Friday</li>
-              <li class="contacts-timetable__hours">06:00 AM - 10:00 PM</li>
-            </ul>
-            <ul class="style">
-              <li>Saturday - Sunday</li>
-              <li class="contacts-timetable__hours">08:00 AM - 16:00 PM</li>
-            </ul>
-          </section>
-
-          <section>
-            <ul class="contacts__communication style">
-              <li>
-                <a class="contacts__tel" href="tel:+61(0)383766284"
-                  >+61(0)383 766 284</a
-                >
-              </li>
-              <li>
-                <a href="mailto:noreply@envato.com"></a>noreply@envato.com
-              </li>
-            </ul>
-          </section>
-        </div>
-      </div>
-      <!-- section-button -->
-
-      <div class="contacts-btn">
-        <button class="contacts-btn__locat" type="button">Our Locations</button>
-        <button class="contacts-btn__franch" type="button">Franchise</button>
-      </div>
+    <include src="./partials/advantages.html"></include>
+    <div class="gallery-reviews-background container-gallery-reviews">
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer_reviews.html"></include>
     </div>
-
-    <!-- modal franchise -->
-
-    <div class="backdrop">
-      <div class="modal-frn">
-        <button class="modal-frn__btn-close" type="button"></button>
-        <h3 class="modal-frn__title">
-          Thank you for your interest in owning an Ice Cream shop
-        </h3>
-        <p class="modal-frn__paragr">
-          Due to the overwhelming volume of franchise requests we are not
-          accepting new franchisee applications at this time. Once the
-          application process resumes, we will contact you for further
-          information. Please fill out the contact information below and we will
-          reach out for additional information. We appreciate your patience.
-        </p>
-        <form>
-          <div class="modal-frn__input-list">
-            <input
-              type="text"
-              class="modal-frn__input-name"
-              required
-              placeholder="Name"
-            />
-
-            <input
-              type="tel"
-              class="modal-frn__input-tel"
-              required
-              placeholder="Phone"
-            />
-
-            <input
-              type="email"
-              class="modal-frn__input-email"
-              required
-              placeholder="Email"
-            />
-
-            <textarea
-              class="modal-frn__input-comment"
-              name="user-comment"
-              placeholder="Comment"
-              id=""
-            ></textarea>
-          </div>
-          <button type="submit" class="modal__btn-sub">Submit</button>
-        </form>
-      </div>
-    </div>
-    <!-- <script src=""></script> -->
     <include src="./partials/contacts.html"></include>
+
+    <include src="./partials/footer.html"></include>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

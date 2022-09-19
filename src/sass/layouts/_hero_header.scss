@@ -466,12 +466,12 @@ color: #FCFCFC;
             top: -7px;
             width: 131.56px;
             height: 131.95px;
-            background-image: url('../images/buy_now_modal/1_lr.png');
+            //background-image: url('../images/buy_now_modal/1_lr.png');
             background-repeat: no-repeat;
             background-size: cover;
-            @include retina {
+/*             @include retina {
               background-image: url('../images/buy_now_modal/1_lr@2x.png');
-            }
+            } */
         }
         }
         &-text {
@@ -494,12 +494,12 @@ color: #FCFCFC;
             top: -7px;
             width: 131.56px;
             height: 131.95px;
-            background-image: url('../images/buy_now_modal/2_lr.png');
+            //background-image: url('../images/buy_now_modal/2_lr.png');
             background-repeat: no-repeat;
             background-size: cover;
-            @include retina {
+/*             @include retina {
               background-image: url('../images/buy_now_modal/2_lr@2x.png');
-            }
+            } */
         }
         }
         &-text {
@@ -523,12 +523,12 @@ color: #FCFCFC;
             top: -7px;
             width: 131.56px;
             height: 131.95px;
-            background-image: url('../images/buy_now_modal/3_lr.png');
+            //background-image: url('../images/buy_now_modal/3_lr.png');
             background-repeat: no-repeat;
             background-size: cover;
-            @include retina {
+/*             @include retina {
               background-image: url('../images/buy_now_modal/3_lr@2x.png');
-            }
+            } */
         }
         }
         &-text {

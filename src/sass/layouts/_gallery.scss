@@ -1,4 +1,12 @@
 .gallery {
+    margin-bottom: -24px;
+        @include tablet {
+            margin-bottom: -147px;
+        }
+        @include desktop {
+            margin-bottom: -94px;
+        }
+
     .slideshow {
         margin: auto;
     }
@@ -6,12 +14,12 @@
     .slideshow__item {
         display: none;
         position: relative;
-        top: -24px;
+        transform: translateY(-24px); 
         @include tablet {
-            top: -164px;
+            transform: translateY(-147px);
         }
         @include desktop {
-            top: -94px;
+            transform: translateY(-94px); 
         }
         img {
             vertical-align: middle;

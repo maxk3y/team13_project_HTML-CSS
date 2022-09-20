@@ -118,62 +118,69 @@
 
     <div class="contacts-btn">
       <button class="contacts-btn__locat" type="button">Our Locations</button>
-      <button class="contacts-btn__franch" type="button">Franchise</button>
+      <button
+        class="contacts-btn__franch"
+        type="button"
+        data-modal-contacts-open
+      >
+        Franchise
+      </button>
     </div>
   </div>
 </div>
 
 <!-- modal franchise -->
 
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-modal-contacts>
   <div class="modal-frn">
-    <button class="modal-frn__btn-close" type="button">
-      <svg height="9" width="9">
-        <use href="/src/images/icomoon/SVG/close.svg#icon-close"></use>
+    <button class="modal-frn__btn" type="button" data-modal-contacts-close>
+      <svg class="icon-close" height="16" width="16">
+        <use href="./images/icomoon/SVG/close.svg#icon-close"></use>
       </svg>
     </button>
-    <h3 class="modal-frn__title">
-      Thank you for your interest in owning an Ice Cream shop
-    </h3>
-    <p class="modal-frn__paragr">
-      Due to the overwhelming volume of franchise requests we are not accepting
-      new franchisee applications at this time. Once the application process
-      resumes, we will contact you for further information. Please fill out the
-      contact information below and we will reach out for additional
-      information. We appreciate your patience.
-    </p>
-    <form>
-      <div class="modal-frn__input-list">
-        <input
-          type="text"
-          class="modal-frn__input-name"
-          required
-          placeholder="Name"
-        />
+    <div class="wrapper">
+      <h3 class="modal-frn__title">
+        Thank you for your interest in owning an Ice Cream shop
+      </h3>
+      <p class="modal-frn__paragr">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <form>
+        <div class="modal-frn__input-list">
+          <input
+            type="text"
+            class="modal-frn__input-name"
+            required
+            placeholder="Name"
+          />
 
-        <input
-          type="tel"
-          class="modal-frn__input-tel"
-          required
-          placeholder="Phone"
-        />
+          <input
+            type="tel"
+            class="modal-frn__input-tel"
+            required
+            placeholder="Phone"
+          />
 
-        <input
-          type="email"
-          class="modal-frn__input-email"
-          required
-          placeholder="Email"
-        />
+          <input
+            type="email"
+            class="modal-frn__input-email"
+            required
+            placeholder="Email"
+          />
 
-        <textarea
-          class="modal-frn__input-comment"
-          name="user-comment"
-          placeholder="Comment"
-          id=""
-        ></textarea>
-      </div>
-      <button type="submit" class="modal__btn-sub">Submit</button>
-    </form>
+          <textarea
+            class="modal-frn__input-comment"
+            name="user-comment"
+            placeholder="Comment"
+            id=""
+          ></textarea>
+        </div>
+        <button type="submit" class="modal__btn-sub">Submit</button>
+      </form>
+    </div>
   </div>
 </div>
-<script srl="/src/js/modal-franchise.js"></script>

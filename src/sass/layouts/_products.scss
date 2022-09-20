@@ -39,11 +39,11 @@
   padding: 0;
   display: flex;
   margin: 0;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     gap: 16px;
     margin-top: 200px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     gap: 32px;
     margin-top: 304px;
   }
@@ -55,38 +55,37 @@
   }
 }
 .products-info {
-  display: flex;
+  @extend %align-list;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 123px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding-top: 108px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 166px;
+    padding-left: 64px;
+    padding-right: 63px;
   }
 }
 .products-title-secondary {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-
-  @include font(800, 18px, 22px, null);
+  @include font (800, 18px, 22px, null);
   text-align: center;
   text-transform: uppercase;
   color: #131313;
   margin-bottom: 12px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 22px;
     line-height: 27px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 30px;
     line-height: 37px;
   }
@@ -95,30 +94,25 @@
 .products-title-primary {
   font-family: 'Seymour One';
   font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 38px;
-  @include font(400, 30px, 38px, 0.04em);
+  @include font (400, 30px, 38px, .04em);
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 34px;
     line-height: 43px;
     margin-top: 8px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 36px;
     line-height: 45px;
   }
 }
 
 .products-item {
-  display: flex;
+  @extend %align-list;
   flex-direction: column;
-  align-items: center;
   position: relative;
   background-color: #aec6a5;
   border: 1px solid #000000;
@@ -131,11 +125,11 @@
     flex-basis: 100%;
     height: 428px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     height: 428px;
     width: calc((100% - 16px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     height: 535px;
     width: calc((100% - 32px) / 3);
   }
@@ -162,7 +156,7 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 301px;
     height: 300px;
   }
@@ -172,7 +166,7 @@
     display: block;
     top: -10%;
     left: -2px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       content: url('../images/products/1kelsey-curtis_lr.png');
     }
   }
@@ -191,7 +185,7 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 301px;
     height: 300px;
   }
@@ -201,7 +195,7 @@
     display: block;
     top: -10%;
     left: -2px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       content: url('../images/products/2pariwat-pannium_lr.png');
     }
   }
@@ -220,7 +214,7 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 301px;
     height: 300px;
   }
@@ -230,7 +224,7 @@
     display: block;
     top: -10%;
     left: -2px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       content: url('../images/products/3victor-rutka_lr.png');
     }
   }
@@ -239,21 +233,17 @@
 .products-item-title {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  @include font(700, 20px, 24px, 0.04em);
+  @include font (700, 20px, 24px, .04em);
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     .products-item-title {
       font-size: 22px;
       line-height: 27px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 30px;
     line-height: 36.57px;
     margin-top: 32px;
@@ -263,21 +253,15 @@
 .products-item-text {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 176%;
-  @include font(400, 14px, 25px, 0.04em);
+  @include font (400, 14px, 25px, .04em);
   text-align: center;
-  letter-spacing: 0.04em;
   color: #131313;
   margin: 0;
   padding-top: 40px;
 
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 16px;
+    line-height: 28px;
   }
 }
 
@@ -293,13 +277,13 @@
 }
 
 .products-modal {
+  position: absolute;
   width: 280px;
   position: absolute;
   width: calc(100% - 30px);
   background: #fcfcfc;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
-  position: absolute;
   left: 50%;
   top: 50%;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -337,6 +321,7 @@
   pointer-events: none;
   visibility: hidden;
 }
+
 .products-modal-btn {
   cursor: pointer;
   width: 20px;
@@ -349,10 +334,10 @@
 
   &:hover,
   &:focus {
-    fill: #f8d24e;
+    fill: var(--primary-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     top: 20px;
     right: 20px;
   }
@@ -367,10 +352,7 @@
 }
 
 .products-modal-title {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  @include font(400, 20px, 28px, null);
+  @include font (400, 20px, 28px, null);
   text-align: center;
   font-family: 'Seymour One';
   font-style: normal;
@@ -379,7 +361,7 @@
   @media screen and (max-width: 767px) {
     margin-top: 28px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 24px;
     margin-top: 32px;
   }
@@ -399,7 +381,7 @@
     ),
     #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-  @media screen and (max-width: 768px) {
+  @include tablet {
     margin-top: 22px;
   }
 
@@ -410,24 +392,22 @@
   }
 }
 .products-modal-set {
-  display: flex;
+  @extend %align-list;
   flex-direction: column;
-  align-items: center;
 }
 .products-modal-image {
   margin-left: 54px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-left: 218px;
     margin-right: 218px;
   }
 }
 
 .products-modal-list {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   gap: 10px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     gap: 20px;
   }
 }
@@ -437,7 +417,7 @@
   border-radius: 40px;
   width: 53px;
   height: 72px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 63px;
     height: 90px;
   }
@@ -446,8 +426,7 @@
   width: 40px;
 }
 .products-modal-box {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   margin: auto;
   background-color: #9cbe8f;
@@ -455,12 +434,9 @@
   height: 43px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 28px;
-  @include font(500, 12px, 28px, null);
+  @include font (500, 12px, 28px, null);
   color: #131313;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 53px;
     height: 53px;
   }
@@ -470,19 +446,15 @@
 }
 
 .products-modal-box-text {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   margin-top: 7px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  @include font(400, 10px, 12px, null);
+  @include font (400, 10px, 12px, null);
   text-align: center;
   color: #131313;
-  font-size: 10px;
-  line-height: 12px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 12px;
     line-height: 15px;
   }
@@ -493,10 +465,7 @@
   margin-bottom: 24px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  @include font(500, 20px, 28px, null);
+  @include font (500, 20px, 28px, null);
   align-items: center;
   text-align: center;
   color: #131313;
@@ -512,18 +481,14 @@
 .products-modal-data-title {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 176%;
-  letter-spacing: 0.04em;
-  @include font(400, 14px, 25px, 0.04em);
+  @include font (400, 14px, 25px, .04em);
   color: #131313;
 }
 .products-form {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     align-items: center;
   }
 }
@@ -533,16 +498,16 @@
   width: 100%;
   height: 42px;
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   margin-bottom: 16px;
-  @media screen and (min-width: 767px) {
+  @include tablet {
     width: 368px;
   }
 }
 .products-form-texarea {
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   width: 100%;
   height: 84px;
@@ -550,7 +515,7 @@
   padding-left: 15px;
   margin-bottom: 32px;
   resize: none;
-  @media screen and (min-width: 767px) {
+  @include tablet {
     width: 368px;
     margin: 0 auto;
   }
@@ -558,38 +523,31 @@
 .products-form-texarea::placeholder {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  @include font(400, 14px, 20px, null);
+  @include font (400, 14px, 20px, null);
   color: #131313;
 }
-.products-form-label {
-  position: absolute;
-  padding-left: 16px;
-  padding-top: 11px;
-  @media screen and (min-width: 768px) {
-  }
-}
+
 .products-form-btn {
   display: block;
   margin: 0 auto;
   width: 132px;
   height: 42px;
-  background: #f8d24e;
+  background: var(--primary-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   justify-content: center;
-  transition-property: background-color, color;
-  transition-duration: 0.25s;
-  &:disabled {
-    background-color: #ababab;
-    color: #131313;
+  &:hover {
+    background-color: var(--tertiary-color);
+  }
+  &:focus {
+    background-color: var(--tertiary-color);
+    color: #fcfcfc;
+    outline: var(--tertiary-color);
   }
   transition-property: background-color, color;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 121px;
     margin-top: 32px;
   }

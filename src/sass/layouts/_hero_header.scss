@@ -1,85 +1,67 @@
 
 
-// .container {
-  //     width: 1200px;
-  //    margin: 0 auto;
-  //    padding: 0 16px;
-     
-  ul {
-    list-style: none;
-  }  
-//   }
-  /* .container {
-    @media screen and (min-width 480px) {
-      width: 480px;
-      margin: 0 auto;
-   padding: 0 16px;
-    }
-    @media screen and (min-width 768px) {
-      width: 768px;
-      margin: 0 auto;
-   padding: 0 16px;
-    }
-    @media screen and (min-width 1200px) {
-      width: 1200px;
-    }
-  } */
-  /* body {
-      background: rgba(132, 161, 120, 1); 
-  } */
-  p {
-      margin: 0;
-  }
-  .header {
-    /* display: flex;
-      justify-content: space-around; */
-    background: rgba(132, 161, 120, 1);
-    /* margin-bottom: 45px; */
-  }
-  .logo-icon {
-    fill: #F8D24E;
-  }
-  .header-list {
-    display: none;
-    @include desktop {
-        display: flex;
-        justify-content: start;
-        list-style: none;
-        gap: 27px;
-        align-items: flex-end;
-        margin: 0;
-        margin-left: 269px;
-        margin-right: 247px;
-      }
-      }
-    
-  .header-nav {
+ul {
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+.header {
+
+}
+
+.header__list {
+  display: none;
+  @include desktop {
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    width: 100%;
-  }
-  .header-link {
-    text-decoration: none;
-    font-family: "Montserrat" "sant-serif";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fcfcfc;
-    &:hover {
-        color: rgba(248, 210, 78, 1);
-      }
-  }
+    justify-content: start;
+    list-style: none;
+    gap: 27px;
+    align-items: flex-end;
   
-  .btn {
-    display: none;
-    @include tablet {
-        display: block;
-        background-color: rgba(248, 210, 78, 1);
+   
+  }
+}
+
+.header__nav {
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @include tablet {
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  @include desktop {
+    padding-top: 8px;
+    gap: 0;
+  }
+}
+.header__link {
+  text-decoration: none;
+  font-family: 'Montserrat' 'sant-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fcfcfc;
+  &:hover {
+    color: rgba(248, 210, 78, 1);
+  }
+  &:focus {
+    color: #FCFCFC;
+  }
+}
+
+.header__btn {
+  display: none;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(248, 210, 78, 1);
     align-items: center;
     color: #131313;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -88,108 +70,129 @@
     height: 42px;
     border: none;
     border-radius: 10px;
-      }
-    
   }
-  .menu-open {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid black;
+  &:hover {
+    background-color: 
+    rgba(10, 136, 23, 1);
   }
-  .hero {
-      position: relative;
-      border-color: var(--solution-bg);
-      background-color:rgba(132, 161, 120, 1);
-      background-image:
-      url(/src/images/hero_header/ice-cream_sm.png),
-        // url(/src/images/hero_header/more_ice-cream_lr.png),
-        url(/src/images/hero_header/dots_sm.png);
-      /* background-size: cover; */
-      background-position:right 14px bottom -53px, bottom;
-      background-repeat: no-repeat;
-      max-width: 320px;
-      height: 502px;
-      margin-right: auto;
-      margin-left: auto;
-      padding-left: auto;
-      padding-right: auto;
-      @include mobile {
-        max-width: 480px;
-        background-position:right 90px bottom -53px, bottom;
-        
-      }
-      @include tablet {
-        height: 415px;
-        max-width: 768px;
-        background-image:
-        url(/src/images/hero_header/ice-cream_md.png),
-          url(/src/images/hero_header/more_ice-cream_md.png),
-          url(/src/images/hero_header/dots_md.png);
-        /* background-size: cover; */
-        background-position:right 23px bottom -56px, bottom 13px left 32px, bottom;
-      }
-      @include desktop {
-        height: 664px;
-        min-width: 1200px;
-        background-image:
-        url(/src/images/hero_header/ice-cream_lr.png),
-          url(/src/images/hero_header/more_ice-cream_lr.png),
-          url(/src/images/hero_header/dots_lr.png);
-        /* background-size: cover; */
-        background-position:right 23px bottom -100px, bottom 65px left 17px, bottom;
-      }
+  &:focus {
+    background-color: 
+    rgba(10, 136, 23, 1);
+    color: #FCFCFC;  
   }
-  .hero-title {
-    font-family: 'Seymour One';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 33px;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-padding-top: 61px;
-color: #FCFCFC;
-@include tablet {
+    &:disabled {
+      background-color: #ABABAB;
+    }
+    &::after {
+    content: "";  
+    min-width: 12px;
+    height: 12px;
+    background-image: url(/src/images/contacts/btn_vector.svg);
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    }
+    &::after:focus {
+      fill: #FCFCFC; 
+    }
+}
+
+.header__logo {
+  max-width: 48px;
+  min-height: 44px;
+  @include desktop {
+    min-width: 60px;
+    min-height: 65px;
+  }
+}
+.hero {
+  position: relative;
+  border-color: var(--solution-bg);
+  background-color: rgba(132, 161, 120, 1);
+  background-image: url(/src/images/hero_header/ice-cream_sm.png),
+    // url(/src/images/hero_header/more_ice-cream_lr.png),
+    url(/src/images/hero_header/dots_sm.png);
+  /* background-size: cover; */
+  background-position:  bottom -53px center,  bottom;
+  background-repeat: no-repeat;
+  // max-width: 100%;
+  height: 502px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: auto;
+  padding-right: auto;
+  @include mobile {
+    max-width: 480px;
+    background-position: right 90px bottom -53px, bottom;
+  }
+  @include tablet {
+    height: 415px;
+    max-width: 768px;
+    background-image: url(/src/images/hero_header/ice-cream_md.png),
+      url(/src/images/hero_header/more_ice-cream_md.png),
+      url(/src/images/hero_header/dots_md.png);
+    /* background-size: cover; */
+    background-position: right 23px bottom -56px, bottom 13px left 32px, bottom;
+  }
+  @include desktop {
+    height: 664px;
+    min-width: 1200px;
+    background-image: url(/src/images/hero_header/ice-cream_lr.png),
+      url(/src/images/hero_header/more_ice-cream_lr.png),
+      url(/src/images/hero_header/dots_lr.png);
+    /* background-size: cover; */
+    background-position: right 23px bottom -100px, bottom 65px left 17px, bottom;
+  }
+}
+.hero__for-position {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: 61px;
+  color: #fcfcfc;
+  @include tablet {
     font-size: 18px;
-line-height: 23px;
-padding-top: 40px;
+    line-height: 23px;
+    padding-top: 32px;
   }
-@include desktop {
+  @include desktop {
     font-size: 38px;
     line-height: 48px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-      margin: 0;
+    margin: 0;
     color: #fcfcfc;
-   width: 367px;
+    width: 367px;
 
-  padding-top: 45px;
-  margin-bottom: 28px;
+    padding-top: 45px;
+    margin-bottom: 28px;
   }
-    
-  }
-  .passion {
-font-size: 34px;
-line-height: 33px;
-@include tablet {
+}
+.hero__passion {
+  font-size: 34px;
+  line-height: 33px;
+  @include tablet {
     font-size: 24px;
-line-height: 13px;
-width: 100%;
+    line-height: 13px;
+    width: 100%;
   }
   @include desktop {
     font-size: 38px;
-line-height: 48px;
+    line-height: 48px;
   }
-
-
-  }
-  .hero-btn {
-    
-      background: rgba(132, 161, 120, 1);
-      border: 2px solid #F8D24E;
-      border-radius: 10px;
-      width: 62px;
+}
+.hero__btn {
+  background: rgba(132, 161, 120, 1);
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  width: 62px;
   height: 24px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -206,132 +209,250 @@ line-height: 48px;
     font-size: 14px;
     line-height: 18px;
   }
+  &:hover {
+  border: 2px solid #0A8817;
   }
-  .hero-link {
-      font-family: 'Montserrat';
+  &:focus {
+    border: 2px solid #0A8817;
+    color: #FCFCFC; 
+  }
+  &:disabled {
+    border: 2px solid #ABABAB;
+  }
+}
+.hero-link {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
   line-height: 10px;
   /* identical to box height */
-  
+
   display: flex;
   align-items: center;
   text-align: center;
   text-decoration-line: underline;
-  
-  color: #F8D24E;
+
+  color: #f8d24e;
   @include desktop {
     font-size: 14px;
     line-height: 18px;
   }
+  &:hover {
+    color: #0A8817;
+
   }
-  .hero-fl {
-      margin-top: 32px;
-      display: flex;
+  &:focus {
+    color: #FCFCFC;
   }
-  .hero-text {
-    display: none;
-    @include tablet {
-        display: block;
-        width: 151px;
-        height: 85px;
-        display: block;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 140%;
-        margin-top: 56px;
-         margin-left: 185px;
-        color: #FCFCFC;
-      }
-     @include desktop {
-      font-size: 14px;
-      width: 200px;
-      height: 80px;
-      margin-top: 111px;
-      margin-left: 256px;
-     
-     }
+  &:disabled {
+    color: #ABABAB;
   }
-  .for-numb {
-      width: 52px;
-      height: 77px;
-      font-family: 'Montserrat';
+
+}
+.hero__flx {
+  margin-top: 32px;
+  display: flex;
+}
+.hero__text {
+  display: none;
+  @include tablet {
+    display: block;
+    width: 151px;
+    height: 85px;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    margin-top: 56px;
+    margin-left: 185px;
+    color: #fcfcfc;
+  }
+  @include desktop {
+    font-size: 14px;
+    width: 200px;
+    height: 80px;
+    margin-top: 111px;
+    margin-left: 256px;
+  }
+}
+.hero__for-numb {
+  width: 46px;
+  height: 48px;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 8px;
+  line-height: 10px;
   text-align: right;
-  color: #FCFCFC;
-  
+  color: #fcfcfc;
+  @include desktop {
+    width: 52px;
+    height: 77px;
+    font-size: 14px;
+    line-height: 17px;
   }
-  .spec {
-    width: 48px;
-    @include desktop {
-    width: 79px;
-    }
-  }
-  .numbers {
-    display: none;
-    @include tablet {
-        position: absolute;
-        top: 56px;
-        right: 16px;
-        display: block;
-      }
-      
-  }
-  .num {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 900;
-font-size: 28px;
-line-height: 34px;
-/* identical to box height */
-text-align: right;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #131313;
-@include desktop {
-  font-size: 46px;
-  line-height: 56px;
 }
+.spec {
+  width: 48px;
+  @include desktop {
+    width: 79px;
   }
+}
+.hero__numbers {
+  display: none;
+  @include tablet {
+    // position: absolute;
+    // top: 94px;
+    // right: 16px;
+    display: block;
+    padding-top: 28px;
+  }
+  @include desktop {
+    top: 126px;
+    right: 16px;
+  }
+}
+.hero__num {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height */
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  @include desktop {
+    font-size: 46px;
+    line-height: 56px;
+  }
+}
+.mob-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(151, 175, 141, 1);
+  z-index: 2;
+  overflow: hidden;
+  
+  @include desktop {
+    display: none;
+  }
+}
 
-  .mob-menu-nav-link {
+.mob-menu__nav-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #fcfcfc;
+  &:hover,
+  &:focus {
+    color: #131313;
+  }
+  @include tablet {
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
+
+.mob-menu__navig-list {
+  padding-top: 100px;
+  @include tablet {
+    padding-top: 140px;
+  }
+}
+.mob-menu__nav-li {
+  display: flex;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+.mob-menu__btn-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  border: none;
+  background: none;
+}
+.mob-menu__icon-open {
+  fill: #131313;
+}
+.mob-menu__btn-open {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  border: none;
+  background: none;
+  @include tablet {
+    top: 29px;
+    right: 216px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.mob-menu__icon-close {
+  fill: #fcfcfc;
+}
+.mob-menu__btn-mob {
+  display: inherit;
+  margin-top: 111px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(248, 210, 78, 1);
+    align-items: center;
+    color: #131313;
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 59px;
-
-display: flex;
-align-items: center;
-text-align: center;
-text-decoration: none;
-color: #FCFCFC;
-  }
-  .mob-menu {
-   
-    width: 100vw;
-  
-    background-color: 
-    rgba(151, 175, 141, 1);
-  }
-  .mob-menu-nav-li {
-    display: flex;
-    justify-content: center;
-    &:not(:last-child) {
-        margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    width: 152px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;  
+    @include tablet {
+      display: none;
     }
+
+}
+.hero__btn-arrow {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.hero__arrow-link {
+  max-height: 20px;
+  &:hover .hero__arrow {
+    min-width: 50px;
   }
   
-
-
-
-
+.hero__arrow {
+  width: 40px;
+  height: 20px;
+  fill: rgba(252, 252, 252, 1);
+  margin-top: 10px;
+  @include desktop {
+    margin-top: 22px;
+  }
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
   /* Modal */
   @mixin transition($element) {
     transition-property: #{$element};
@@ -344,6 +465,7 @@ color: #FCFCFC;
     height: 100%;
     top: 0;
     z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); 
     @include transition('opacity, visibility');
     &_window{
         position: absolute;
@@ -608,4 +730,4 @@ color: #FCFCFC;
 }.buy_check:checked + .buy_offer-3 {
        background-color: #D5753FB2;
 }
-
+}

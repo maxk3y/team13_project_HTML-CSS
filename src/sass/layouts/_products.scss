@@ -72,13 +72,11 @@
 .products-title-secondary {
   font-family: 'Montserrat';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-=======
+
   @include font(800, 18px, 22px, null);
->>>>>>> Stashed changes
   text-align: center;
   text-transform: uppercase;
   color: #131313;
@@ -97,13 +95,10 @@
 .products-title-primary {
   font-family: 'Seymour One';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 400;
   font-size: 30px;
   line-height: 38px;
-=======
   @include font(400, 30px, 38px, 0.04em);
->>>>>>> Stashed changes
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -244,13 +239,10 @@
 .products-item-title {
   font-family: 'Montserrat';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-=======
   @include font(700, 20px, 24px, 0.04em);
->>>>>>> Stashed changes
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -271,13 +263,10 @@
 .products-item-text {
   font-family: 'Montserrat';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 400;
   font-size: 14px;
   line-height: 176%;
-=======
   @include font(400, 14px, 25px, 0.04em);
->>>>>>> Stashed changes
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
@@ -304,12 +293,9 @@
 }
 
 .products-modal {
-<<<<<<< Updated upstream
   width: 280px;
-=======
   position: absolute;
   width: calc(100% - 30px);
->>>>>>> Stashed changes
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -321,30 +307,24 @@
   padding-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
-<<<<<<< Updated upstream
   @media screen and (min-width: 768px) {
-=======
-  @include mobile {
-    width: 480px;
-  }
-
-  @include tablet {
->>>>>>> Stashed changes
-    width: 568px;
-    max-height: calc(100% - 20px);
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 32px;
+    @include mobile {
+      width: 480px;
+    }
+    @include tablet {
+      width: 568px;
+      max-height: calc(100% - 20px);
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 32px;
+    }
   }
 }
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
-<<<<<<< Updated upstream
-=======
   z-index: 10;
->>>>>>> Stashed changes
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
@@ -387,13 +367,10 @@
 }
 
 .products-modal-title {
-<<<<<<< Updated upstream
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-=======
   @include font(400, 20px, 28px, null);
->>>>>>> Stashed changes
   text-align: center;
   font-family: 'Seymour One';
   font-style: normal;
@@ -478,13 +455,10 @@
   height: 43px;
   font-family: 'Montserrat';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 500;
   font-size: 12px;
   line-height: 28px;
-=======
   @include font(500, 12px, 28px, null);
->>>>>>> Stashed changes
   color: #131313;
   @media screen and (min-width: 768px) {
     width: 53px;
@@ -502,11 +476,8 @@
   margin-top: 7px;
   font-family: 'Montserrat';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 400;
-=======
   @include font(400, 10px, 12px, null);
->>>>>>> Stashed changes
   text-align: center;
   color: #131313;
   font-size: 10px;
@@ -522,13 +493,10 @@
   margin-bottom: 24px;
   font-family: 'Montserrat';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-=======
   @include font(500, 20px, 28px, null);
->>>>>>> Stashed changes
   align-items: center;
   text-align: center;
   color: #131313;
@@ -544,14 +512,11 @@
 .products-modal-data-title {
   font-family: 'Montserrat';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 400;
   font-size: 14px;
   line-height: 176%;
   letter-spacing: 0.04em;
-=======
   @include font(400, 14px, 25px, 0.04em);
->>>>>>> Stashed changes
   color: #131313;
 }
 .products-form {
@@ -593,13 +558,10 @@
 .products-form-texarea::placeholder {
   font-family: 'Montserrat';
   font-style: normal;
-<<<<<<< Updated upstream
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-=======
   @include font(400, 14px, 20px, null);
->>>>>>> Stashed changes
   color: #131313;
 }
 .products-form-label {

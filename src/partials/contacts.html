@@ -118,16 +118,22 @@
 
     <div class="contacts-btn">
       <button class="contacts-btn__locat" type="button">Our Locations</button>
-      <button class="contacts-btn__franch" type="button" data-modal-open>Franchise</button>
+      <button
+        class="contacts-btn__franch"
+        type="button"
+        data-modal-contacts-open
+      >
+        Franchise
+      </button>
     </div>
   </div>
 </div>
 
 <!-- modal franchise -->
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-contacts>
   <div class="modal-frn">
-    <button class="modal-frn__btn" type="button" data-modal-close>
+    <button class="modal-frn__btn" type="button" data-modal-contacts-close>
       <svg class="icon-close" height="16" width="16">
         <use href="./images/icomoon/SVG/close.svg#icon-close"></use>
       </svg>
@@ -137,11 +143,11 @@
         Thank you for your interest in owning an Ice Cream shop
       </h3>
       <p class="modal-frn__paragr">
-        Due to the overwhelming volume of franchise requests we are not accepting
-        new franchisee applications at this time. Once the application process
-        resumes, we will contact you for further information. Please fill out the
-        contact information below and we will reach out for additional
-        information. We appreciate your patience.
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
       </p>
       <form>
         <div class="modal-frn__input-list">

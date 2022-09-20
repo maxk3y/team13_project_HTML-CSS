@@ -127,6 +127,7 @@
 }
 .about__text-item-last {
   display: none;
+  font-family: 'Montserrat';
   @include tablet {
     display: inline;
     min-width: 336px;
@@ -212,7 +213,7 @@
   align-items: center;
   margin-top: 20px;
   padding: 12px 34px 12px 34px;
-  font-family: 'Montserrat, sans-serif';
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28;
@@ -254,7 +255,15 @@
     display: flex;
   }
 }
-
+.btn__about {
+  width: 10px;
+  height: 10px;
+  fill: #131313;
+  margin-left: 5px;
+  &:focus {
+    fill: #fcfcfc;
+  }
+}
 .backdrop {
   width: 100%;
   height: 100%;

@@ -75,7 +75,7 @@
 .products-title-secondary {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (800, 18px, 22px, null);
+  @include font(800, 18px, 22px, null);
   text-align: center;
   text-transform: uppercase;
   color: #131313;
@@ -94,7 +94,7 @@
 .products-title-primary {
   font-family: 'Seymour One';
   font-style: normal;
-  @include font (400, 30px, 38px, .04em);
+  @include font(400, 30px, 38px, 0.04em);
   text-align: center;
   text-transform: uppercase;
   color: #131313;
@@ -233,7 +233,7 @@
 .products-item-title {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (700, 20px, 24px, .04em);
+  @include font(700, 20px, 24px, 0.04em);
   text-align: center;
   text-transform: uppercase;
   color: #131313;
@@ -253,7 +253,7 @@
 .products-item-text {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (400, 14px, 25px, .04em);
+  @include font(400, 14px, 25px, 0.04em);
   text-align: center;
   color: #131313;
   margin: 0;
@@ -279,6 +279,7 @@
 .products-modal {
   position: absolute;
   width: 280px;
+  height: 995px;
   position: absolute;
   width: calc(100% - 30px);
   background: #fcfcfc;
@@ -297,7 +298,6 @@
     }
     @include tablet {
       width: 568px;
-      max-height: calc(100% - 20px);
       padding-left: 40px;
       padding-right: 40px;
       padding-bottom: 32px;
@@ -352,7 +352,7 @@
 }
 
 .products-modal-title {
-  @include font (400, 20px, 28px, null);
+  @include font(400, 20px, 28px, null);
   text-align: center;
   font-family: 'Seymour One';
   font-style: normal;
@@ -434,7 +434,7 @@
   height: 43px;
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (500, 12px, 28px, null);
+  @include font(500, 12px, 28px, null);
   color: #131313;
   @include tablet {
     width: 53px;
@@ -451,7 +451,7 @@
   margin-top: 7px;
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (400, 10px, 12px, null);
+  @include font(400, 10px, 12px, null);
   text-align: center;
   color: #131313;
   @include tablet {
@@ -465,7 +465,7 @@
   margin-bottom: 24px;
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (500, 20px, 28px, null);
+  @include font(500, 20px, 28px, null);
   align-items: center;
   text-align: center;
   color: #131313;
@@ -481,7 +481,7 @@
 .products-modal-data-title {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (400, 14px, 25px, .04em);
+  @include font(400, 14px, 25px, 0.04em);
   color: #131313;
 }
 .products-form {
@@ -523,7 +523,7 @@
 .products-form-texarea::placeholder {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (400, 14px, 20px, null);
+  @include font(400, 14px, 20px, null);
   color: #131313;
 }
 

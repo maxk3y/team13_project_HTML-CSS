@@ -13,10 +13,8 @@
                 and natural stabilizer
               </p>
               </div>
-              <button type="button" class="products-btn" data-modal-open>
-                  <svg class="products-modal-img">
-                      <use uref="./images/icomoon/SVG/arrow_default.svg#arrow_default"></use>
-                  </svg>
+              <button class="products-btn" data-modal-open type="button" >
+                <img class="modal-btn-img" src="/src/images/icomoon/PNG/arrow_default.png" alt="">
               </button>
             </li>
   
@@ -29,7 +27,8 @@
                 without the use of preservatives and flavor enhancers
               </p>
            </div>
-              <button type="button" class="products-btn" data-modal-open>
+              <button class="products-btn" data-modal-open type="button" >
+                <img class="modal-btn-img" src="/src/images/icomoon/PNG/arrow_default.png" alt="">
               </button>
             </li>
   
@@ -42,7 +41,8 @@
                 syrups, fruits, berries and other sweets of your choice
               </p>
               </div>
-              <button type="button" class="products-btn" data-modal-open>
+              <button class="products-btn" data-modal-open type="button" >
+                  <img class="modal-btn-img" src="/src/images/icomoon/PNG/arrow_default.png" alt="">
               </button>
             </li>
           </ul>
@@ -51,12 +51,12 @@
       <div class="backdrop is-hidden" data-modal>
       <div class="products-modal is-hidden" >
         <button type="button" class="products-modal-btn" data-modal-close>
-          <svg class="products-modal-img">
-              <use uref="./images/icomoon/SVG/clode.svg#close"></use>
+          <svg class="modal-btn-icon">
+            <use href="./images/icomoon/SVG/close.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="products-modal-title">Chololate icecream</h2>
         <div class="products-modal-set">
+        <h2 class="products-modal-title">Chololate icecream</h2>
         <div class="eclipce-modal"></div>
         
         <ul class="products-modal-list">
@@ -115,17 +115,15 @@
   
         <form class="products-form">
           <div>
-            <label class="products-form-label" for="name">Name</label>
-            <input class="products-form-input" type="text" name="user-name" id="name"/>
+            <input class="products-form-input" type="text" name="user-name" placeholder="Name"/>
           </div>
           <div>
-            <label class="products-form-label" for="tel">Phone</label>
-            <input class="products-form-input" type="tel" name="user-tel" id="tel" />
+            <input class="products-form-input" type="text" name="user-phone" placeholder="Phone"/>
           </div>
           <div>
             <textarea name="user-text" id="user-text" placeholder="Comment" class="products-form-texarea"></textarea>
           </div>
-          <button class="products-form-btn" type="button">Submit</button>
+          <button class="products-form-btn" type="submit">Submit</button>
         </form>
       </div>
     </div>

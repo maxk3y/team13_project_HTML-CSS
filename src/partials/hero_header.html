@@ -1,79 +1,116 @@
 
        
-          <!-- <button class="menu-open">
-            0
-          </button>
+          
           <div class="mob-menu is-hidden" data-menu>
             <div class="container">
-              <button type="button" class="menu-btn-close" data-menu-close>
-                <svg class="menu-icon-close" width="40" height="40">
-                  <use href="#"></use>
+              <button type="button" class="mob-menu__btn-close" data-menu-close>
+                <svg class="mob-menu__icon-close" width="32" height="32">
+                  <use href="/src/images/icomoon/symbol-defs.svg#close"></use>
                 </svg>
               </button>
-              <nav class="mob-menu-nav">
-                <ul class="mob-menu-navig-list">
-                  <li class="mob-menu-nav-li">
-                    <a class="mob-menu-nav-link" href="#">Home</a>
+              <nav class="mob-menu__nav">
+                <ul class="mob-menu__navig-list">
+                  <li class="mob-menu__nav-li">
+                    <a class="mob-menu__nav-link" href="#">Home</a>
                   </li>
-                  <li class="mob-menu-nav-li">
-                    <a class="mob-menu-nav-link" href="#"
+                  <li class="mob-menu__nav-li">
+                    <a class="mob-menu__nav-link" href="#"
                       >How it’s made?</a
                     >
                   </li>
-                  <li class="mob-menu-nav-li">
-                    <a class="mob-menu-nav-link" href="#">Our products</a>
+                  <li class="mob-menu__nav-li">
+                    <a class="mob-menu__nav-link" href="#">Our products</a>
                   </li>
-                  <li class="mob-menu-nav-li">
-                    <a class="mob-menu-nav-link" href="#">Contact</a>
+                  <li class="mob-menu__nav-li">
+                    <a class="mob-menu__nav-link" href="#">Contact</a>
                   </li>
                 </ul>
-              </nav> -->
-             
+              </nav>
+              <button class="mob-menu__btn-mob">Buy now 
+                <!-- <svg class="btn-icon">
+                  <use href=""></use>
+                </svg> -->
+              </button>
+            </div> 
+          </div>
              
     <section class="hero">
         <div class="container">
           <header class="header">
             
-            <nav class="header-nav">
-              <a href="" class="logo">
-                <svg class="logo-icon" width="44" height="46">
-                    <use href="/src/images/hero_header/arrow.svg"></use>
-                </svg>
+            <button class="mob-menu__btn-open" data-menu-open>
+              <svg class="mob-menu__icon-open" width="32" height="32">
+                <use href="/src/images/icomoon/symbol-defs.svg#burger"></use>
+              </svg>
+            </button>
+            <nav class="header__nav">
+              <a href="" class="header__logo">
+                <picture>
+                  <source 
+                srcset="/src/images/hero_header/Logo_lr.png"
+                media="(min-width: 1200px)"
+                >
+                <source 
+                srcset="/src/images/hero_header/Logo_md.png"
+                media="(min-width: 768px)"
+                >
+                <source 
+                srcset="/src/images/hero_header/Logo_sm.png"
+                media="(max-width: 767px)"
+                >
+                </picture>
+                <img class="logo" src="/src/images/hero_header/Logo_lr.png" alt="">
               </a>
-              <ul class="header-list">
-                  <li><a href="" class="header-link">Home</a></li>
-                  <li><a href="" class="header-link">How it’s made?</a></li>
-                  <li><a href="" class="header-link">Our products</a></li>
-                  <li><a href="" class="header-link">Contact</a></li>
+              <ul class="header__list">
+                  <li><a href="" class="header__link">Home</a></li>
+                  <li><a href="" class="header__link">How it’s made?</a></li>
+                  <li><a href="" class="header__link">Our products</a></li>
+                  <li><a href="" class="header__link">Contact</a></li>
               </ul>
               
-            <button class="btn" type="button" buy-open>Buy now ></button>
+            <button class="header__btn">Buy now >
+              <!-- <svg class="btn-icon">
+                <use href=""></use>
+              </svg> -->
+            </button>
         
           </header>
-            <h1 class="hero-title">ice cream <br>
+          <div class="hero__for-position">
+            <div class="box">
+              <h1 class="hero__title">ice cream <br>
                 made with <br>
-                <span class="passion">passion</span></h1>
-                <div class="hero-fl">
-                    <button class="hero-btn">Rroducts</button>
+                <span class="hero__passion">passion</span></h1>
+                <div class="hero__flx">
+                    <button class="hero__btn">Rroducts</button>
                     <a href="" class="hero-link">How it’s made?</a>
                 </div>
-                <p class="hero-text">
+            </div>
+            
+              <div class="hero__numbers">
+                <p class="hero__for-numb spec">
+                    <span class="hero__num">16</span>
+                    cafes</p>
+                <p class="hero__for-numb spec">
+                    <span class="hero__num">23</span>
+                    food trucks</p>
+            </div>
+          </div>
+            
+                  <p class="hero__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    <button class="hero__btn-arrow">
+                      <img src="/src/images/icomoon/PNG/arrow_default.png" alt="" class="hero__arrow">
+                    <!-- <svg class="hero__arrow" >
+                  <use href="/src/images/icomoon/symbol-defs.svg#arrow_default"></use>
+              </svg> -->
+                    </button>
                 </p>
-                <svg class="arrow" width="40" height="1">
-                    <use href="/src/images/hero_header/arrow.svg"></use>
-                </svg>
-                <div class="numbers">
-                    <p class="for-numb spec">
-                        <span class="num">16</span>
-                        cafes</p>
-                    <p class="for-numb spec">
-                        <span class="num">23</span>
-                        food trucks</p>
-                </div>
+                
                 
         </div>
     </section>
+    
+
 
 
 
@@ -145,7 +182,7 @@
             class="buy_input"
             placeholder="Phone"
             name="user_phone"
-            pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+            pattern="\+?[0-9\s\-\(\)]+"
           />
           <p class="buy_error">Example +38(044)555-55-45</p>
         </div>

@@ -112,7 +112,7 @@ transition: cbackground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 width: 34px;
 height: 34px;}}
 
-.social-networks__icon1 {
+.social-networks__icon {
 display: flex;
 align-self: center;
 justify-content: center;
@@ -123,45 +123,11 @@ fill: #FCFCFC;
 cursor: auto;
 transition: foll 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 @media screen and (max-width: 767px){
-width: 18.82px;
-height: 18.83px;}
+width: 32px;
+height: 32px;}
 @media screen and (min-width: 768px)  {
-width: 20px;
-height: 20px;}}
-
-.social-networks__icon2 {
-display: flex;
-align-self: center;
-justify-content: center;
-fill: var(--secondary-color);
-&:hover,
-&:focus {
-fill: #FCFCFC;
-cursor: auto;
-transition: foll 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-@media screen and (max-width: 767px){
-width: 19.2px;
-height: 14.94px;}
-@media screen and (min-width: 768px)  {
-width: 20.4px;
-height: 15.87px;}}
-
-.social-networks__icon3 {
-display: flex;
-align-self: center;
-justify-content: center;
-fill: var(--secondary-color);
-&:hover,
-&:focus {
-fill: #FCFCFC;
-cursor: auto;
-transition: foll 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-@media screen and (max-width: 767px){
-width: 8.8px;
-height: 19.2px;}
-@media screen and (min-width: 768px)  {
-width: 9.35px;
-height: 20.4px;}}
+width: 34px;
+height: 34px;}}
 
 .footer__contacts {
 font-weight: 700;

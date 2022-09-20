@@ -117,12 +117,16 @@
     <!-- section-button -->
 
     <div class="contacts-btn">
-      <button class="contacts-btn__locat" type="button">Our Locations</button>
+      <button 
+        class="contacts-btn__locat" 
+        type="button"
+        data-modal-location-open>
+        Our Locations
+      </button>
       <button
         class="contacts-btn__franch"
         type="button"
-        data-modal-contacts-open
-      >
+        data-modal-contacts-open>
         Franchise
       </button>
     </div>
@@ -181,6 +185,30 @@
         </div>
         <button type="submit" class="modal__btn-sub">Submit</button>
       </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal our_contacts -->
+
+<div class="backdrop is-hidden" data-modal-location>
+  <div class="modal-contacts">
+    <button class="modal-contacts-btn" type="button" data-modal-location-close>
+      <svg class="icon-close" height="16" width="16">
+        <use href="./images/icomoon/SVG/close.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="wrapper">
+      <h3 class="modal-frn__title">
+        Our Locations      
+      </h3>
+      <div class="modal-img" >
+        
+      </div>
+        <button type="submit" class="modal__btn-contacts">
+          Open map
+        </button>
     </div>
   </div>
 </div>

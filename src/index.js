@@ -4,4 +4,4 @@ import './js/about.js';
 import './js/products.js';
 import './js/hero_header';
 import './js/modal-franchise';
-// import './js/our_contacts';
+import './js/modal-our-location';

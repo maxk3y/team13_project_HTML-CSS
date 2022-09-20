@@ -282,6 +282,7 @@
   display: block;
   width: 100%;
   max-width: 280px;
+  // min-height: 674px;
   padding: 30px 30px;
   border: 2px solid #F8D24E;
   transform: translate(-50%, -50%) scale(1);
@@ -301,13 +302,15 @@
     }
 
     @include desktop {
+
       max-width: 568px;
       min-height: 668px;
     }
   }
 
 
-.modal-frn__btn {
+.modal-frn__btn,
+.modal-contacts-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -337,7 +340,7 @@
 
 .modal-frn__title {
   margin-bottom: 20px;
-
+  text-align: center;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
@@ -394,7 +397,8 @@
   }
 }
 
-.modal__btn-sub {
+.modal__btn-sub,
+.modal__btn-contacts {
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -418,6 +422,90 @@
   &:focus {
     background: #0a8817;
     outline: none;
+  }
+}
+
+.modal-contacts {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  min-height: 365px;
+  padding: 30px 30px;
+  border: 2px solid #F8D24E;
+  transform: translate(-50%, -50%) scale(1);
+  background: #fcfcfc;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+
+    max-width: 568px;
+    min-height: 468px;
+  }
+
+  @include desktop {
+
+    max-width: 568px;
+    min-height: 468px;
+  }
+}
+
+.modal-img {
+  display: block;
+  width: 100%;
+  width: 224px;
+  height: 199px;
+  margin: 0 auto;
+  
+  border-radius: 10px;
+  margin-bottom: 24px;
+  background-image: url(/src/images/modal_our_location/map_sm.png);
+  background-image: -webkit-image-set(url(/src/images/modal_our_location/map_sm.webp) 1x);
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(/src/images/modal_our_location/map_sm@2x.png);
+      background-image: -webkit-image-set(url(/src/images/modal_our_location/map_sm@2x.webp) 2x);
+    }
+
+  @include tablet {
+    width: 448px;
+    height: 260px;
+    background-image: url(/src/images/modal_our_location/map_lr.png);
+    background-image: -webkit-image-set(url(/src/images/modal_our_location/map_lr.webp) 1x);
+    margin-bottom: 32px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(/src/images/modal_our_location/map_lr@2x.png);
+          background-image: -webkit-image-set(url(/src/images/modal_our_location/map_lr@2x.webp) 2x);
+        }
+    
+  }
+  
+  @include desktop {
+    max-width: 448px;
+    min-height: 260px;
+    margin-bottom: 32px;
+    background-image: url(/src/images/modal_our_location/map_lr.png);
+    background-image: -webkit-image-set(url(/src/images/modal_our_location/map_lr.webp) 1x);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(/src/images/modal_our_location/map_lr@2x.png);
+        background-image: -webkit-image-set(url(/src/images/modal_our_location/map_lr@2x.webp) 2x);
+      }
   }
 }
 

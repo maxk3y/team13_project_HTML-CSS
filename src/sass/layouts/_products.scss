@@ -4,7 +4,7 @@
   background-image: url(/src/images/products/bg-products-mob1x.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   @include retina {
     background-image: url(/src/images/products/bg-products-mob2x.png);
   }

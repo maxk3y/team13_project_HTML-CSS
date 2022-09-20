@@ -5,3 +5,4 @@ import './js/products.js';
 import './js/hero_header';
 import './js/modal-franchise';
 import './js/modal-our-location';
+import './js/hero_header-menu';

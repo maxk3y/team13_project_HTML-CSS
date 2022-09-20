@@ -112,7 +112,7 @@ p {
     // url(/src/images/hero_header/more_ice-cream_lr.png),
     url(/src/images/hero_header/dots_sm.png);
   /* background-size: cover; */
-  background-position:  bottom -53px center,  bottom;
+  background-position: center bottom -53px, bottom;
   background-repeat: no-repeat;
   // max-width: 100%;
   height: 502px;
@@ -448,26 +448,23 @@ p {
     margin-top: 22px;
   }
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
   /* Modal */
-  @mixin transition($element) {
-    transition-property: #{$element};
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .buy {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     top: 0;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5); 
     @include transition('opacity, visibility');
-    &_window{
+    
+    &_window {
         position: absolute;
         width: 280px;
         height: auto;

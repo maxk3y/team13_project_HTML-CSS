@@ -427,8 +427,7 @@
   }
 }
 
-.modal__btn-sub,
-.modal__btn-contacts {
+.modal__btn-sub {
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -439,6 +438,37 @@
   border-radius: 10px;
   border: transparent;
 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #131313;
+  &:hover {
+    background: #0a8817;
+    color: #fff;
+  }
+  &:focus {
+    background: #0a8817;
+    outline: none;
+  }
+  @include tablet {
+    margin-top: 32px;
+  }
+}
+
+.modal__btn-contacts {
+  display: block;
+  width: 145px;
+  height: 42px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 24px;
+  text-align: center;
+  padding-top: 14px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: transparent;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;

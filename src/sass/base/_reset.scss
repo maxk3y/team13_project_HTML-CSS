@@ -1,4 +1,3 @@
-
 p,
 h1,
 h2,
@@ -24,9 +23,15 @@ img {
 
 button {
   cursor: pointer;
+  @include transition('color, background-color, border-color');
 }
 
 address {
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  @include transition('color, background-color, transform, fill');
+}

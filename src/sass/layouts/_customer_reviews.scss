@@ -20,7 +20,13 @@
 
 .customer-reviews {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 400px;
+  @include tablet {
+    padding-bottom: 380px;
+  }
+  @include desktop {
+    padding-bottom: 160px;
+  }
 }
 .customer-reviews__box {
   @extend %align-list;
@@ -28,9 +34,6 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 705px;
-
-  @include mobile {
-  }
 }
 .customer-reviews__image {
   width: 85px;

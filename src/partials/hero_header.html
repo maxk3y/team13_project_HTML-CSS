@@ -3,6 +3,14 @@
           
           <div class="mob-menu is-closed" data-menu>
             <div class="container">
+              <a href="" class="mob-menu-logo">
+                <picture>
+                  <source srcset="/src/images/hero_header/Logo_lr.png" media="(min-width: 1200px)">
+                  <source srcset="/src/images/hero_header/Logo_md.png" media="(min-width: 768px)">
+                  <source srcset="/src/images/hero_header/Logo_sm.png" media="(max-width: 767px)">
+                  <img class="logo" src="/src/images/hero_header/Logo_lr.png" alt="">
+                </picture>
+              </a>
               <button type="button" class="mob-menu__btn-close" data-menu-close>
                 <svg class="mob-menu__icon-close" width="32" height="32">
                   <use href="/src/images/icomoon/symbol-defs.svg#close"></use>
@@ -15,7 +23,7 @@
                   </li>
                   <li class="mob-menu__nav-li">
                     <a class="mob-menu__nav-link" href="#how-its-made"
-                      >How it’s made?</a
+                      >How it&#8217;s made?</a
                     >
                   </li>
                   <li class="mob-menu__nav-li">
@@ -34,76 +42,75 @@
             </div> 
           </div>
              
-    <section class="hero">
-        <div class="container">
+    <div class="hero">
+        <div class="hero-bg">
           <header class="header">
-            
-            <button class="mob-menu__btn-open" data-menu-open>
-              <svg class="mob-menu__icon-open" width="32" height="32">
-                <use href="/src/images/icomoon/symbol-defs.svg#burger"></use>
-              </svg>
-            </button>
-            <nav class="header__nav">
-              <a href="" class="header__logo">
-                <picture>
-                  <source 
-                srcset="/src/images/hero_header/Logo_lr.png"
-                media="(min-width: 1200px)"
-                >
-                <source 
-                srcset="/src/images/hero_header/Logo_md.png"
-                media="(min-width: 768px)"
-                >
-                <source 
-                srcset="/src/images/hero_header/Logo_sm.png"
-                media="(max-width: 767px)"
-                >
-                </picture>
+            <a href="" class="header__logo">
+              <picture>
+                <source srcset="/src/images/hero_header/Logo_lr.png" media="(min-width: 1200px)">
+                <source srcset="/src/images/hero_header/Logo_md.png" media="(min-width: 768px)">
+                <source srcset="/src/images/hero_header/Logo_sm.png" media="(max-width: 767px)">
                 <img class="logo" src="/src/images/hero_header/Logo_lr.png" alt="">
-              </a>
+              </picture>
+            </a>
+            <nav class="header__nav">
               <ul class="header__list">
                   <li><a href="#index.html" class="header__link">Home</a></li>
                   <li><a href="#how-its-made" class="header__link">How it&#8217;s made?</a></li>
                   <li><a href="#prod" class="header__link">Our products</a></li>
                   <li><a href="#cont" class="header__link">Contact</a></li>
               </ul>
-              
-            <button class="header__btn" buy-open>
-              Buy now               
-            </button>
-        
-          </header>
-          <div class="hero__for-position">
-            <div class="box">
-              <h1 class="hero__title">ice cream <br>
-                made with <br>
-                <span class="hero__passion">passion</span></h1>
-                <div class="hero__flx">
-                    <button class="hero__btn">Products</button>
-                    <a href="" class="hero-link">How it’s made?</a>
-                </div>
+            </nav>
+            <div class="header-btn-thumb">
+              <button class="mob-menu__btn-open" data-menu-open>
+                <svg class="mob-menu__icon-open" width="32" height="32">
+                  <use href="/src/images/icomoon/symbol-defs.svg#burger"></use>
+                </svg>
+              </button>
+              <button class="header__btn" buy-open>
+                Buy now
+              </button>
             </div>
+          </header>
+        
+          <div class="container">
+            <div class="hero-thumb">
+              <div class="hero__for-position">
+                <div class="box">
+                  <h1 class="hero__title">ice cream <br>
+                    made with <br>
+                    <span class="hero__passion">passion</span>
+                  </h1>
+                  <div class="hero__flx">
+                    <button class="hero__btn">Products</button>
+                    <a href="" class="hero-link">How it&#8217;s made?</a>
+                  </div>
+                </div>
             
-              <div class="hero__numbers">
-                <p class="hero__for-numb spec">
+                <div class="hero__numbers">
+                  <p class="hero__for-numb spec">
                     <span class="hero__num">16</span>
-                    cafes</p>
-                <p class="hero__for-numb spec">
+                    cafes
+                  </p>
+                  <p class="hero__for-numb spec">
                     <span class="hero__num">23</span>
-                    food trucks</p>
+                    food trucks
+                  </p>
+                </div>
+              </div>
+              <div class="hero-text-thumb">
+                <p class="hero__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                </p>
+                <a href="" class="hero__arrow-link">
+                  <svg class="hero__arrow">
+                    <use href="/src/images/icomoon/symbol-defs.svg#arrow_default"></use>
+                  </svg>
+                </a>
+              </div>
+            
             </div>
           </div>
-            
-                  <p class="hero__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    <a href="" class="hero__arrow-link">
-                      <svg class="hero__arrow" >
-                        <use href="/src/images/icomoon/symbol-defs.svg#arrow_default"></use>
-                     </svg>
-                    </a>
-                </p>
-                
-                
         </div>
     </section>
     

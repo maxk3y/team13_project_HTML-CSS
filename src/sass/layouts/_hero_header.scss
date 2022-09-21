@@ -109,10 +109,10 @@ p {
   border-color: var(--solution-bg);
   background-color: rgba(132, 161, 120, 1);
   background-image: url(/src/images/hero_header/ice-cream_sm.png),
-    // url(/src/images/hero_header/more_ice-cream_lr.png),
     url(/src/images/hero_header/dots_sm.png);
-  /* background-size: cover; */
-  background-position: center bottom -53px, bottom;
+
+  background-position: bottom center, bottom;
+  
   background-repeat: no-repeat;
   // max-width: 100%;
   height: 502px;
@@ -456,6 +456,7 @@ p {
   /* Modal */
   .buy {
     position: fixed;
+    overflow-y: scroll;
     width: 100%;
     height: 100%;
     top: 0;
@@ -472,11 +473,12 @@ p {
         border-radius: 10px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -30%) scale(1);
         @include transition('transform');
         @include tablet {
             width: 568px;
             height: auto;
+            transform: translate(-50%, -50%) scale(1);
         }
     }
     &_btn-close {
@@ -715,6 +717,9 @@ p {
             height: 84px;
         }
     }    
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 .buy_check:checked + .buy_offer-1 {

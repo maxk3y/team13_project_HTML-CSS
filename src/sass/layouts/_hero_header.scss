@@ -122,7 +122,7 @@ p {
   padding-right: auto;
   @include mobile {
     max-width: 480px;
-    background-position: right 90px bottom -53px, bottom;
+    background-position: right 111px bottom , bottom;
   }
   @include tablet {
     height: 415px;
@@ -131,7 +131,7 @@ p {
       url(/src/images/hero_header/more_ice-cream_md.png),
       url(/src/images/hero_header/dots_md.png);
     /* background-size: cover; */
-    background-position: right 23px bottom -56px, bottom 13px left 32px, bottom;
+    background-position: right 23px bottom , bottom 13px left 32px, bottom;
   }
   @include desktop {
     height: 664px;
@@ -140,7 +140,7 @@ p {
       url(/src/images/hero_header/more_ice-cream_lr.png),
       url(/src/images/hero_header/dots_lr.png);
     /* background-size: cover; */
-    background-position: right 23px bottom -100px, bottom 65px left 17px, bottom;
+    background-position: right 23px bottom , bottom 65px left 17px, bottom;
   }
 }
 .hero__for-position {

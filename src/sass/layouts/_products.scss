@@ -331,7 +331,7 @@
   left: 50%;
   top: 50%;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -30%)scale(1);
   padding-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
@@ -349,6 +349,7 @@
 }
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   z-index: 10;

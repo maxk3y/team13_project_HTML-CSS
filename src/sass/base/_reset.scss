@@ -23,6 +23,7 @@ img {
 
 button {
   cursor: pointer;
+  @include transition('color, background-color, border-color');
 }
 
 address {
@@ -32,4 +33,5 @@ address {
 a {
   text-decoration: none;
   cursor: pointer;
+  @include transition('color, background-color, transform, fill');
 }

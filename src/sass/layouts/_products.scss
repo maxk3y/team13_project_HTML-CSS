@@ -10,7 +10,6 @@
   }
 
   @include mobile {
-    background-size: 480px;
     background-image: url(/src/images/products/bg-products-mob1x.png);
     @include retina {
       background-image: url(/src/images/products/bg-products-mob2x.png);
@@ -20,7 +19,6 @@
   @include tablet {
     padding-bottom: 82px;
     background-image: url(/src/images/products/bg-ice-cream_md.png);
-    background-size: 768px;
     @include retina {
       background-image: url(../images/products/bg-ice-cream_md@2x.png);
     }
@@ -29,7 +27,6 @@
   @include desktop {
     padding-bottom: 60px;
     background-image: url(../images/products/bg-ice-cream_lr.png);
-    background-size: 1200px 1080px;
     @include retina {
       background-image: url(../images/products/bg-ice-cream_lr@2x.png);
     }
@@ -316,7 +313,10 @@
   justify-content: center;
   align-items: center;
   display: block;
-  top: 93%;
+  bottom:20px;
+  @include desktop {
+    bottom:60px;
+  }
 
 }
 
@@ -477,6 +477,11 @@
 }
 .modal-btn-img {
   width: 40px;
+  height: 20px;
+  &:hover {
+    min-width: 50px;
+    transition: min-width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .products-modal-box {
   @extend %align-list;

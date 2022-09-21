@@ -7,34 +7,41 @@ p {
   margin: 0;
 }
 .header {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 26px;
+  @include tablet {
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include desktop {
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .header__list {
   display: none;
   @include desktop {
     display: flex;
-    justify-content: start;
     list-style: none;
     gap: 27px;
-    align-items: flex-end;
-  
-   
+    align-items: center;
   }
 }
 
 .header__nav {
   padding-top: 12px;
-  display: flex;
-  align-items: center;
-  width: 100%;
   @include tablet {
-    justify-content: space-between;
     padding-top: 20px;
   }
   @include desktop {
     padding-top: 8px;
-    gap: 0;
   }
 }
 .header__link {
@@ -108,44 +115,71 @@ p {
   position: relative;
   border-color: var(--solution-bg);
   background-color: rgba(132, 161, 120, 1);
-  background-image: url(/src/images/hero_header/ice-cream_sm.png),
-    url(/src/images/hero_header/dots_sm.png);
-
-  background-position: bottom center, bottom;
   
-  background-repeat: no-repeat;
-  // max-width: 100%;
-  height: 502px;
+  // height: 502px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: auto;
-  padding-right: auto;
-  @include mobile {
-    max-width: 480px;
-    background-position: right 111px bottom , bottom;
-  }
-  @include tablet {
-    height: 415px;
-    max-width: 768px;
-    background-image: url(/src/images/hero_header/ice-cream_md.png),
-      url(/src/images/hero_header/more_ice-cream_md.png),
-      url(/src/images/hero_header/dots_md.png);
-    /* background-size: cover; */
-    background-position: right 23px bottom , bottom 13px left 32px, bottom;
-  }
-  @include desktop {
-    height: 664px;
-    min-width: 1200px;
-    background-image: url(/src/images/hero_header/ice-cream_lr.png),
-      url(/src/images/hero_header/more_ice-cream_lr.png),
-      url(/src/images/hero_header/dots_lr.png);
-    /* background-size: cover; */
-    background-position: right 23px bottom , bottom 65px left 17px, bottom;
+  
+  // @include tablet {
+  //   height: 415px;
+  // }
+  // @include desktop {
+  //   height: 664px;
+  // }
+
+  .hero-bg {
+    background-image: url(/src/images/hero_header/ice-cream_sm.png),
+        url(/src/images/hero_header/dots_sm.png);
+    background-position: bottom center, bottom;
+    background-repeat: no-repeat;
+
+    @include mobile {
+      max-width: 480px;
+      margin: 0 auto;
+      background-position: right 111px bottom, bottom;
+    }
+    @include tablet {
+      max-width: 768px;
+      background-image: url(/src/images/hero_header/ice-cream_md.png),
+        url(/src/images/hero_header/more_ice-cream_md.png),
+        url(/src/images/hero_header/dots_md.png);
+      background-position: right 23px bottom, bottom 13px left 32px, bottom;
+    }
+    @include desktop {
+      max-width: 1200px;
+      background-image: url(/src/images/hero_header/ice-cream_lr.png),
+        url(/src/images/hero_header/more_ice-cream_lr.png),
+        url(/src/images/hero_header/dots_lr.png);
+      background-position: right 23px bottom, bottom 65px left 17px, bottom;
+    }
   }
 }
+
+.hero-thumb {
+  padding-bottom: 239px;  
+    @include tablet {
+      padding-bottom: 26px;
+    }  
+    @include desktop {
+      padding-bottom: 105px;
+    }
+}
+
 .hero__for-position {
   display: flex;
   justify-content: space-between;
+  padding-top: 61px;
+  @include tablet {
+    padding-top: 28px;
+    .box {
+      @media screen and (max-width: 1199px) {
+        padding-top: 10px;
+      }
+    }
+  }
+  @include desktop {
+    padding-top: 48px;
+  }
 }
 .hero__title {
   font-family: 'Seymour One';
@@ -155,12 +189,12 @@ p {
   line-height: 33px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding-top: 61px;
+  // padding-top: 61px;
   color: #fcfcfc;
   @include tablet {
     font-size: 18px;
     line-height: 23px;
-    padding-top: 32px;
+    // padding-top: 32px;
   }
   @include desktop {
     font-size: 38px;
@@ -171,7 +205,7 @@ p {
     color: #fcfcfc;
     width: 367px;
 
-    padding-top: 45px;
+    // padding-top: 45px;
     margin-bottom: 28px;
   }
 }
@@ -254,6 +288,18 @@ p {
   margin-top: 32px;
   display: flex;
 }
+
+.hero-text-thumb {
+  @include tablet {
+    margin-top: 56px;
+    margin-left: 185px;
+  }
+  @include desktop {
+    margin-top: 111px;
+    margin-left: 256px;
+  }
+}
+
 .hero__text {
   display: none;
   @include tablet {
@@ -266,16 +312,12 @@ p {
     font-weight: 400;
     font-size: 12px;
     line-height: 140%;
-    margin-top: 56px;
-    margin-left: 185px;
     color: #fcfcfc;
   }
   @include desktop {
     font-size: 14px;
     width: 200px;
     height: 80px;
-    margin-top: 111px;
-    margin-left: 256px;
   }
 }
 .hero__for-numb {
@@ -308,12 +350,12 @@ p {
     // top: 94px;
     // right: 16px;
     display: block;
-    padding-top: 28px;
+    // padding-top: 28px;
   }
-  @include desktop {
-    top: 126px;
-    right: 16px;
-  }
+  // @include desktop {
+  //   top: 126px;
+  //   right: 16px;
+  // }
 }
 .hero__num {
   font-family: 'Montserrat';
@@ -338,9 +380,20 @@ p {
   background-color: rgba(151, 175, 141, 1);
   z-index: 2;
   overflow: hidden;
-  
+  .container {
+    padding-top: 12px;
+    padding-left: 31px;
+  }
   @include desktop {
     display: none;
+  }
+}
+
+.mob-menu-logo {
+  width: 48px;
+  height: 44px;
+  img {
+    width: auto;
   }
 }
 
@@ -389,8 +442,15 @@ p {
 .mob-menu__icon-open {
   fill: #131313;
 }
+
+.header-btn-thumb {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .mob-menu__btn-open {
-  position: absolute;
+  // position: absolute;
   top: 16px;
   right: 20px;
   border: none;
@@ -434,9 +494,13 @@ p {
   padding: 0;
 }
 .hero__arrow-link {
+  display: none;
   max-height: 20px;
   &:hover .hero__arrow {
     min-width: 50px;
+  }
+  @include tablet {
+    display: block;
   }
 } 
 .hero__arrow {

@@ -1,10 +1,10 @@
-<div class="contacts">
-  <div class="qweqwe">
+<section class="contacts">
+  <div class="contacts__contents">
     <div class="contacts__bloks">
       <div class="contacts__blok" id="cont">
         <p class="contacts__class style">CAFE</p>
 
-        <section class="contacts__location"  >
+        <section class="contacts__location">
           <p class="style">Chicago</p>
           <a
             class="contacts__coordinates style"
@@ -117,21 +117,23 @@
     <!-- section-button -->
 
     <div class="contacts-btn">
-      <button 
-        class="contacts-btn__locat" 
+      <button
+        class="contacts-btn__locat"
         type="button"
-        data-modal-location-open>
+        data-modal-location-open
+      >
         Our Locations
       </button>
       <button
         class="contacts-btn__franch"
         type="button"
-        data-modal-contacts-open>
+        data-modal-contacts-open
+      >
         Franchise
       </button>
     </div>
   </div>
-</div>
+</section>
 
 <!-- modal franchise -->
 
@@ -153,7 +155,7 @@
         fill out the contact information below and we will reach out for
         additional information. We appreciate your patience.
       </p>
-      <form>
+      <form class="contacts__form-style">
         <div class="modal-frn__input-list">
           <input
             type="text"
@@ -189,7 +191,6 @@
   </div>
 </div>
 
-
 <!-- modal our_contacts-->
 
 <div class="backdrop is-hidden" data-modal-location>
@@ -200,15 +201,9 @@
       </svg>
     </button>
     <div class="wrapper">
-      <h3 class="modal-frn__title">
-        Our Locations      
-      </h3>
-      <div class="modal-img" >
-        
-      </div>
-        <button type="submit" class="modal__btn-contacts">
-          Open map
-        </button>
+      <h3 class="modal-frn__title">Our Locations</h3>
+      <div class="modal-img"></div>
+      <button type="submit" class="modal__btn-contacts">Open map</button>
     </div>
   </div>
 </div>

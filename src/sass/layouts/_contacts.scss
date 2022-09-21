@@ -19,24 +19,29 @@
   margin-right: auto;
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 40px;
   background: #84a178;
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    padding-bottom: 120px;
   }
 }
 
 .qweqwe {
   display: block;
   position: relative;
-
+  top: -360px;
+  margin-bottom: -360px;
   @media screen and (min-width: 768px) {
-    top: -304px;
+    top: -320px;
+    margin-bottom: -320px;
   }
   @media screen and (min-width: 1200px) {
-    top: -96px;
+    top: -100px;
+    margin-bottom: -100px;
   }
 }
 
@@ -173,7 +178,6 @@
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 768px) {
-    padding-bottom: 24px;
     flex-direction: row;
     justify-content: center;
   }
@@ -257,7 +261,6 @@
 // modal franchise
 
 .backdrop {
-
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -284,7 +287,7 @@
   max-width: 280px;
   // min-height: 674px;
   padding: 30px 30px;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
   transform: translate(-50%, -50%) scale(1);
   background: #fcfcfc;
   border-radius: 10px;
@@ -294,20 +297,17 @@
   left: 50%;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 674px;
-  
-    @include tablet {
-    
-      max-width: 568px;
-      min-height: 668px;
-    }
 
-    @include desktop {
-
-      max-width: 568px;
-      min-height: 668px;
-    }
+  @include tablet {
+    max-width: 568px;
+    min-height: 668px;
   }
 
+  @include desktop {
+    max-width: 568px;
+    min-height: 668px;
+  }
+}
 
 .modal-frn__btn,
 .modal-contacts-btn {
@@ -336,7 +336,6 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .modal-frn__title {
   margin-bottom: 20px;
@@ -431,7 +430,7 @@
   max-width: 280px;
   min-height: 365px;
   padding: 30px 30px;
-  border: 2px solid #F8D24E;
+  border: 2px solid #f8d24e;
   transform: translate(-50%, -50%) scale(1);
   background: #fcfcfc;
   border-radius: 10px;
@@ -442,13 +441,11 @@
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
-
     max-width: 568px;
     min-height: 468px;
   }
 
   @include desktop {
-
     max-width: 568px;
     min-height: 468px;
   }
@@ -460,52 +457,62 @@
   width: 224px;
   height: 199px;
   margin: 0 auto;
-  
+
   border-radius: 10px;
   margin-bottom: 24px;
   background-image: url(/src/images/modal_our_location/map_sm.png);
-  background-image: -webkit-image-set(url(/src/images/modal_our_location/map_sm.webp) 1x);
+  background-image: -webkit-image-set(
+    url(/src/images/modal_our_location/map_sm.webp) 1x
+  );
   background-repeat: no-repeat;
 
   @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(/src/images/modal_our_location/map_sm@2x.png);
-      background-image: -webkit-image-set(url(/src/images/modal_our_location/map_sm@2x.webp) 2x);
-    }
+    background-image: url(/src/images/modal_our_location/map_sm@2x.png);
+    background-image: -webkit-image-set(
+      url(/src/images/modal_our_location/map_sm@2x.webp) 2x
+    );
+  }
 
   @include tablet {
     width: 448px;
     height: 260px;
     background-image: url(/src/images/modal_our_location/map_lr.png);
-    background-image: -webkit-image-set(url(/src/images/modal_our_location/map_lr.webp) 1x);
+    background-image: -webkit-image-set(
+      url(/src/images/modal_our_location/map_lr.webp) 1x
+    );
     margin-bottom: 32px;
-
-      @media screen and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-          background-image: url(/src/images/modal_our_location/map_lr@2x.png);
-          background-image: -webkit-image-set(url(/src/images/modal_our_location/map_lr@2x.webp) 2x);
-        }
-    
-  }
-  
-  @include desktop {
-    max-width: 448px;
-    min-height: 260px;
-    margin-bottom: 32px;
-    background-image: url(/src/images/modal_our_location/map_lr.png);
-    background-image: -webkit-image-set(url(/src/images/modal_our_location/map_lr.webp) 1x);
 
     @media screen and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(/src/images/modal_our_location/map_lr@2x.png);
-        background-image: -webkit-image-set(url(/src/images/modal_our_location/map_lr@2x.webp) 2x);
-      }
+      background-image: url(/src/images/modal_our_location/map_lr@2x.png);
+      background-image: -webkit-image-set(
+        url(/src/images/modal_our_location/map_lr@2x.webp) 2x
+      );
+    }
+  }
+
+  @include desktop {
+    max-width: 448px;
+    min-height: 260px;
+    margin-bottom: 32px;
+    background-image: url(/src/images/modal_our_location/map_lr.png);
+    background-image: -webkit-image-set(
+      url(/src/images/modal_our_location/map_lr.webp) 1x
+    );
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/modal_our_location/map_lr@2x.png);
+      background-image: -webkit-image-set(
+        url(/src/images/modal_our_location/map_lr@2x.webp) 2x
+      );
+    }
   }
 }
-

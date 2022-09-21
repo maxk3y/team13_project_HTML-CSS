@@ -1,21 +1,46 @@
 .container-gallery-reviews {
   width: 100%;
   margin: 0 auto;
-  @include mobile {
-    width: 480px;
-  }
-  @include tablet {
-    width: 768px;
-  }
-  @include desktop {
-    width: 1200px;
-  }
+  // @include mobile {
+  //   width: 480px;
+  // }
+  // @include tablet {
+  //   width: 768px;
+  // }
+  // @include desktop {
+  //   width: 1200px;
+  // }
 }
 
 .gallery-reviews-background {
-  background-image: url(/src/images/gallery/bg_lr.png);
+  background-image: url(/src/images/gallery/bg_sm.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  @include retina {
+    background-image: url(/src/images/gallery/bg_sm@2x.png);
+  }
+
+  @include mobile {
+    background-image: url(/src/images/gallery/bg_md.png);
+    @include retina {
+      background-image: url(/src/images/gallery/bg_md@2x.png);
+    }
+  }
+
+  @include tablet {
+    background-image: url(/src/images/gallery/bg_md.png);
+    @include retina {
+      background-image: url(/src/images/gallery/bg_md@2x.png);
+    }
+  }
+
+  @include desktop {
+    background-image: url(/src/images/gallery/bg_lr.png);
+    @include retina {
+      background-image: url(/src/images/gallery/bg_lr@2x.png);
+    }
+  }
 }
 
 .customer-reviews {

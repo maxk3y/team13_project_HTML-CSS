@@ -124,10 +124,15 @@
   height: 32px;
   border-radius: 50%;
   background-color: var(--primary-color);
-  transition: cbackground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--secondary-color);
   @media screen and (min-width: 768px) {
     width: 34px;
     height: 34px;
+  }
+  &:hover,
+  &:focus {
+    color: #fcfcfc;
   }
 }
 
@@ -135,13 +140,8 @@
   display: flex;
   align-self: center;
   justify-content: center;
-  fill: var(--secondary-color);
-  &:hover,
-  &:focus {
-    fill: #fcfcfc;
-    cursor: auto;
-    transition: foll 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  fill: currentColor;
+
   @media screen and (max-width: 767px) {
     width: 32px;
     height: 32px;

@@ -48,12 +48,16 @@ p {
   &:hover {
     color: rgba(248, 210, 78, 1);
   }
+  &:focus {
+    color: #FCFCFC;
+  }
 }
 
 .header__btn {
   display: none;
   @include tablet {
-    display: block;
+    display: flex;
+    justify-content: center;
     background-color: rgba(248, 210, 78, 1);
     align-items: center;
     color: #131313;
@@ -67,6 +71,29 @@ p {
     border: none;
     border-radius: 10px;
   }
+  &:hover {
+    background-color: 
+    rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    background-color: 
+    rgba(10, 136, 23, 1);
+    color: #FCFCFC;  
+  }
+    &:disabled {
+      background-color: #ABABAB;
+    }
+    &::after {
+    content: "";  
+    min-width: 12px;
+    height: 12px;
+    background-image: url(/src/images/contacts/btn_vector.svg);
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    }
+    &::after:focus {
+      fill: #FCFCFC; 
+    }
 }
 
 .header__logo {
@@ -85,7 +112,7 @@ p {
     // url(/src/images/hero_header/more_ice-cream_lr.png),
     url(/src/images/hero_header/dots_sm.png);
   /* background-size: cover; */
-  background-position:  bottom -53px center,  bottom;
+  background-position: center bottom -53px, bottom;
   background-repeat: no-repeat;
   // max-width: 100%;
   height: 502px;
@@ -182,6 +209,16 @@ p {
     font-size: 14px;
     line-height: 18px;
   }
+  &:hover {
+  border: 2px solid #0A8817;
+  }
+  &:focus {
+    border: 2px solid #0A8817;
+    color: #FCFCFC; 
+  }
+  &:disabled {
+    border: 2px solid #ABABAB;
+  }
 }
 .hero-link {
   font-family: 'Montserrat';
@@ -201,6 +238,17 @@ p {
     font-size: 14px;
     line-height: 18px;
   }
+  &:hover {
+    color: #0A8817;
+
+  }
+  &:focus {
+    color: #FCFCFC;
+  }
+  &:disabled {
+    color: #ABABAB;
+  }
+
 }
 .hero__flx {
   margin-top: 32px;
@@ -385,35 +433,38 @@ p {
   border: none;
   padding: 0;
 }
+.hero__arrow-link {
+  max-height: 20px;
+  &:hover .hero__arrow {
+    min-width: 50px;
+  }
+  
 .hero__arrow {
   width: 40px;
-  height: 10px;
-  color: rgba(252, 252, 252, 1);
-  margin-top: 20px;
+  height: 20px;
+  fill: rgba(252, 252, 252, 1);
+  margin-top: 10px;
   @include desktop {
-    margin-top: 32px;
+    margin-top: 22px;
   }
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
   /* Modal */
-  @mixin transition($element) {
-    transition-property: #{$element};
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .buy {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     top: 0;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5); 
     @include transition('opacity, visibility');
-    &_window{
+    
+    &_window {
         position: absolute;
         width: 280px;
         height: auto;
@@ -676,4 +727,4 @@ p {
 }.buy_check:checked + .buy_offer-3 {
        background-color: #D5753FB2;
 }
-
+}

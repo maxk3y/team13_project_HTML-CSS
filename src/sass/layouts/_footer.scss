@@ -1,8 +1,9 @@
+
 .footer {
 position: relative;
 background-color: var(--secondary-color);}
-
 .footer__container {
+background-color: var(--secondary-color);
 @media screen and (min-width: 768px) {
 display: flex;
 flex-wrap: wrap;}}

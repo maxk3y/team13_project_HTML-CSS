@@ -30,3 +30,9 @@
   line-height: calc($lh/$fs);
   letter-spacing: $ls;
 }
+
+@mixin transition($element) {
+  transition-property: #{$element};
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

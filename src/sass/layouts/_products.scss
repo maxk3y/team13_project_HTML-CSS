@@ -10,15 +10,15 @@
   }
 
   @include mobile {
-    padding-bottom: 82px;
     background-size: 480px;
-    background-image: url(/src/images/products/bg-products-mob2x.png);
+    background-image: url(/src/images/products/bg-products-mob1x.png);
     @include retina {
       background-image: url(/src/images/products/bg-products-mob2x.png);
     }
   }
 
   @include tablet {
+    padding-bottom: 82px;
     background-image: url(/src/images/products/bg-ice-cream_md.png);
     background-size: 768px;
     @include retina {
@@ -27,10 +27,11 @@
   }
 
   @include desktop {
-    background-image: url(../images/products/bg-ice-cream_lr.webp);
+    padding-bottom: 60px;
+    background-image: url(../images/products/bg-ice-cream_lr.png);
     background-size: 1200px 1080px;
     @include retina {
-      background-image: url(../images/products/bg-ice-cream_lr@2x.webp);
+      background-image: url(../images/products/bg-ice-cream_lr@2x.png);
     }
   }
 }
@@ -75,10 +76,10 @@
 .products-title-secondary {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (800, 18px, 22px, null);
+  @include font(800, 18px, 22px, null);
   text-align: center;
   text-transform: uppercase;
-  color: #131313;
+  color: var(--primary-text-color);
   margin-bottom: 12px;
 
   @include tablet {
@@ -94,10 +95,10 @@
 .products-title-primary {
   font-family: 'Seymour One';
   font-style: normal;
-  @include font (400, 30px, 38px, .04em);
+  @include font(400, 30px, 38px, 0.04em);
   text-align: center;
   text-transform: uppercase;
-  color: #131313;
+  color: var(--primary-text-color);
 
   @include tablet {
     font-size: 34px;
@@ -114,8 +115,8 @@
   @extend %align-list;
   flex-direction: column;
   position: relative;
-  background-color: #aec6a5;
-  border: 1px solid #000000;
+  background-color: var( --first-background-item);
+  border: 1px solid var(--border-color);
   border-radius: 24px;
   border-style: none;
   height: 420px;
@@ -135,15 +136,15 @@
   }
 }
 .products-item:nth-child(2) {
-  background-color: #efd478;
+  background-color: var( --second-background-item);
 }
 
 .products-item:nth-child(3) {
-  background-color: #d6936d;
+  background-color: var( --third-background-item);
 }
 
 .eclipce1 {
-  border: 2px solid #9cbe8f;
+  border: 2px solid var( --second-border-color);
   border-radius: 50%;
   width: 201px;
   height: 200px;
@@ -154,25 +155,38 @@
       rgba(156, 190, 143, 0.7),
       rgba(156, 190, 143, 0.7)
     ),
-    #d9d9d9;
+    var(--gradient-color);
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   @include desktop {
     width: 301px;
     height: 300px;
   }
   &::before {
-    content: url('../images/products/1kelsey-curtis_sm.png');
-    position: absolute;
+    content: '';
     display: block;
+    position: absolute;
     top: -10%;
     left: -2px;
+    width: 200px;
+    height: 200px;
+    background-image: url('../images/products/1kelsey-curtis_sm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+     @include retina {
+      background-image: url('../images/products/1kelsey-curtis_sm@2x.png');
+    } 
     @include desktop {
-      content: url('../images/products/1kelsey-curtis_lr.png');
-    }
+      width: 301px;
+      height: 300px;
+      background-image: url('../images/products/1kelsey-curtis_lr.png');
+      @include retina {
+        background-image: url('../images/products/1kelsey-curtis_lr@2x.png');
+      } 
+    } 
   }
 }
 .eclipce2 {
-  border: 2px solid #efd478;
+  border: 2px solid var(--second-background-item);
   border-radius: 50%;
   width: 201px;
   height: 200px;
@@ -183,25 +197,40 @@
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
-    #d9d9d9;
+    var(--gradient-color);
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
   @include desktop {
     width: 301px;
     height: 300px;
   }
+
+
   &::before {
-    content: url('../images/products/2pariwat-pannium_sm.png');
-    position: absolute;
+    content: '';
     display: block;
+    position: absolute;
     top: -10%;
     left: -2px;
+    width: 200px;
+    height: 200px;
+     background-image: url('../images/products/2pariwat-pannium_sm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+     @include retina {
+      background-image: url('../images/products/2pariwat-pannium_sm@2x.png');
+    } 
     @include desktop {
-      content: url('../images/products/2pariwat-pannium_lr.png');
-    }
+      width: 301px;
+      height: 300px;
+      background-image: url('../images/products/2pariwat-pannium_sm.png');
+      @include retina {
+        background-image: url('../images/products/2pariwat-pannium_sm@2x.png');
+      } 
+    } 
   }
 }
 .eclipce3 {
-  border: 2px solid #d6936d;
+  border: 2px solid var(--third-background-item);
   border-radius: 50%;
   width: 201px;
   height: 200px;
@@ -212,31 +241,45 @@
       rgba(213, 117, 63, 0.7),
       rgba(213, 117, 63, 0.7)
     ),
-    #d9d9d9;
+    var(--gradient-color);
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   @include desktop {
     width: 301px;
     height: 300px;
   }
+
   &::before {
-    content: url('../images/products/3victor-rutka_sm.png');
-    position: absolute;
+    content: '';
     display: block;
+    position: absolute;
     top: -10%;
     left: -2px;
+    width: 200px;
+    height: 200px;
+     background-image: url('../images/products/3victor-rutka_sm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+     @include retina {
+      background-image: url('../images/products/3victor-rutka_sm@2x.png');
+    } 
     @include desktop {
-      content: url('../images/products/3victor-rutka_lr.png');
-    }
+      width: 301px;
+      height: 300px;
+      background-image: url('../images/products/3victor-rutka_lr.png');
+      @include retina {
+        background-image: url('../images/products/3victor-rutka_lr@2x.png');
+      } 
+    } 
   }
 }
 
 .products-item-title {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (700, 20px, 24px, .04em);
+  @include font(700, 20px, 24px, 0.04em);
   text-align: center;
   text-transform: uppercase;
-  color: #131313;
+  color: var(--primary-text-color);
   @include tablet {
     .products-item-title {
       font-size: 22px;
@@ -253,9 +296,9 @@
 .products-item-text {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (400, 14px, 25px, .04em);
+  @include font(400, 14px, 25px, 0.04em);
   text-align: center;
-  color: #131313;
+  color: var(--primary-text-color);
   margin: 0;
   padding-top: 40px;
 
@@ -274,12 +317,16 @@
   align-items: center;
   display: block;
   top: 93%;
+
 }
 
 .products-modal {
   position: absolute;
   width: 280px;
-  background: #fcfcfc;
+  background: var(--background-modal);
+  height: 995px;
+  position: absolute;
+  width: calc(100% - 30px);
   border: 2px solid var(--primary-color);
   border-radius: 10px;
   left: 50%;
@@ -289,19 +336,23 @@
   padding-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
-  @include tablet {
-    width: 568px;
-    min-height: 995px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    @include mobile {
+      width: 480px;
+    }
+    @include tablet {
+      width: 568px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 32px;
+    }
   }
 }
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
@@ -345,11 +396,11 @@
 }
 
 .products-modal-title {
-  @include font (400, 20px, 28px, null);
+  @include font(400, 20px, 28px, null);
   text-align: center;
   font-family: 'Seymour One';
   font-style: normal;
-  color: #131313;
+  color: var(--primary-text-color);
   margin-bottom: 22px;
   @media screen and (max-width: 767px) {
     margin-top: 28px;
@@ -360,8 +411,7 @@
   }
 }
 .eclipce-modal {
-  border: 1px solid #9cbe8f;
-  margin-bottom: 24px;
+  border: 1px solid var(--second-border-color);
   margin-top: 24px;
   border-radius: 50%;
   width: 134px;
@@ -372,17 +422,27 @@
       rgba(156, 190, 143, 0.7),
       rgba(156, 190, 143, 0.7)
     ),
-    #d9d9d9;
+    var(--gradient-color);
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   @include tablet {
     margin-top: 22px;
   }
 
   &::before {
-    content: url('../images/modal_ingradients/ing.png');
+    content: '';
+    display: block;
     position: absolute;
     top: -10%;
+    width: 130px;
+    height: 130px;
+     background-image: url('../images/modal_ingradients/ing.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+     @include retina {
+      background-image: url('../images/modal_ingradients/ing@2x.png');
+    } 
   }
+
 }
 .products-modal-set {
   @extend %align-list;
@@ -427,13 +487,14 @@
   height: 43px;
   font-family: 'Montserrat';
   font-style: normal;
+
   @include font (500, 12px, 28px, null);
-  color: #131313;
+  color: var(--primary-text-color);
   @include tablet {
     width: 53px;
     height: 53px;
   }
-  border: 2px solid #9cbe8f;
+  border: 2px solid var(--second-border-color);
   border-radius: 50%;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
@@ -444,9 +505,9 @@
   margin-top: 7px;
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (400, 10px, 12px, null);
+  @include font(400, 10px, 12px, null);
   text-align: center;
-  color: #131313;
+  color: var(--primary-text-color);
   @include tablet {
     font-size: 12px;
     line-height: 15px;
@@ -458,10 +519,10 @@
   margin-bottom: 24px;
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (500, 20px, 28px, null);
+  @include font(500, 20px, 28px, null);
   align-items: center;
   text-align: center;
-  color: #131313;
+  color: var(--primary-text-color);
 }
 .products-modal-data-item {
   display: flex;
@@ -475,7 +536,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   @include font (400, 14px, 25px, .04em);
-  color: #131313;
+  color: var(--primary-text-color);
 }
 .products-form {
   display: flex;
@@ -517,7 +578,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   @include font (400, 14px, 20px, null);
-  color: #131313;
+  color: var(--primary-text-color);
 }
 
 .products-form-btn {
@@ -534,7 +595,7 @@
   }
   &:focus {
     background-color: var(--tertiary-color);
-    color: #fcfcfc;
+    color: var(--background-modal);
     outline: var(--tertiary-color);
   }
   transition-property: background-color, color;

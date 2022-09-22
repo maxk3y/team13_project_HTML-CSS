@@ -489,10 +489,9 @@
 }
 
 .modal-contacts {
-  display: block;
   width: 100%;
-  max-width: 280px;
-  min-height: 365px;
+  max-width: 568px;
+  min-height: 320px;
   padding: 30px 30px;
   border: 2px solid #f8d24e;
   transform: translate(-50%, -50%) scale(1);
@@ -515,13 +514,24 @@
   }
 }
 
-.modal-img {
-  display: block;
-  width: 100%;
-  width: 224px;
-  height: 199px;
+.iframe-style {
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 448px;
+  max-height: 260px;
+  @include mobile {
+    height: 260px;
+  }
+}
 
+.modal-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   border-radius: 10px;
   margin-bottom: 24px;
   background-image: url(/src/images/modal_our_location/map_sm.png);

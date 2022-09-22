@@ -380,6 +380,7 @@ p {
   background-color: rgba(151, 175, 141, 1);
   z-index: 2;
   overflow: hidden;
+  overflow-y: scroll;
   .container {
     padding-top: 12px;
     padding-left: 31px;

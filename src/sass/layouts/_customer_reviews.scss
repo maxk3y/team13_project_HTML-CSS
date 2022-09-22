@@ -53,6 +53,11 @@
     padding-bottom: 160px;
   }
 }
+
+.customer-reviews__section-title {
+  display: none;
+}
+
 .customer-reviews__box {
   @extend %align-list;
   justify-content: center;

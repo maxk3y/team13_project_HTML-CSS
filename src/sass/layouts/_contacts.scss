@@ -520,6 +520,7 @@
   height: 100%;
   max-width: 448px;
   max-height: 260px;
+  border-radius: 10px;
   @include mobile {
     height: 260px;
   }

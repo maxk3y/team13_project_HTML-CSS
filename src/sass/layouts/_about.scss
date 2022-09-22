@@ -60,8 +60,6 @@
   margin-top: 72px;
   display: block;
   text-align: center;
-  padding-right: 30px;
-  padding-left: 30px;
   @include tablet {
     margin-top: 9px;
     text-align: left;
@@ -82,7 +80,6 @@
   line-height: 1.76;
   @include tablet {
     text-align: left;
-    width: 334px;
   }
   @include desktop {
     width: 463px;
@@ -102,7 +99,6 @@
   margin-top: 4px;
   @include tablet {
     line-height: 1.76;
-    width: 334px;
     margin-top: 8px;
     text-align: left;
   }

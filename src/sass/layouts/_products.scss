@@ -112,7 +112,7 @@
   @extend %align-list;
   flex-direction: column;
   position: relative;
-  background-color: var( --first-background-item);
+  background-color: var(--first-background-item);
   border: 1px solid var(--border-color);
   border-radius: 24px;
   border-style: none;
@@ -133,15 +133,15 @@
   }
 }
 .products-item:nth-child(2) {
-  background-color: var( --second-background-item);
+  background-color: var(--second-background-item);
 }
 
 .products-item:nth-child(3) {
-  background-color: var( --third-background-item);
+  background-color: var(--third-background-item);
 }
 
 .eclipce1 {
-  border: 2px solid var( --second-border-color);
+  border: 2px solid var(--second-border-color);
   border-radius: 50%;
   width: 201px;
   height: 200px;
@@ -169,17 +169,17 @@
     background-image: url('../images/products/1kelsey-curtis_sm.png');
     background-repeat: no-repeat;
     background-size: cover;
-     @include retina {
+    @include retina {
       background-image: url('../images/products/1kelsey-curtis_sm@2x.png');
-    } 
+    }
     @include desktop {
       width: 301px;
       height: 300px;
       background-image: url('../images/products/1kelsey-curtis_lr.png');
       @include retina {
         background-image: url('../images/products/1kelsey-curtis_lr@2x.png');
-      } 
-    } 
+      }
+    }
   }
 }
 .eclipce2 {
@@ -201,7 +201,6 @@
     height: 300px;
   }
 
-
   &::before {
     content: '';
     display: block;
@@ -210,20 +209,20 @@
     left: -2px;
     width: 200px;
     height: 200px;
-     background-image: url('../images/products/2pariwat-pannium_sm.png');
+    background-image: url('../images/products/2pariwat-pannium_sm.png');
     background-repeat: no-repeat;
     background-size: cover;
-     @include retina {
+    @include retina {
       background-image: url('../images/products/2pariwat-pannium_sm@2x.png');
-    } 
+    }
     @include desktop {
       width: 301px;
       height: 300px;
       background-image: url('../images/products/2pariwat-pannium_sm.png');
       @include retina {
         background-image: url('../images/products/2pariwat-pannium_sm@2x.png');
-      } 
-    } 
+      }
+    }
   }
 }
 .eclipce3 {
@@ -253,20 +252,20 @@
     left: -2px;
     width: 200px;
     height: 200px;
-     background-image: url('../images/products/3victor-rutka_sm.png');
+    background-image: url('../images/products/3victor-rutka_sm.png');
     background-repeat: no-repeat;
     background-size: cover;
-     @include retina {
+    @include retina {
       background-image: url('../images/products/3victor-rutka_sm@2x.png');
-    } 
+    }
     @include desktop {
       width: 301px;
       height: 300px;
       background-image: url('../images/products/3victor-rutka_lr.png');
       @include retina {
         background-image: url('../images/products/3victor-rutka_lr@2x.png');
-      } 
-    } 
+      }
+    }
   }
 }
 
@@ -313,11 +312,10 @@
   justify-content: center;
   align-items: center;
   display: block;
-  bottom:20px;
+  bottom: 20px;
   @include desktop {
-    bottom:60px;
+    bottom: 60px;
   }
-
 }
 
 .products-modal {
@@ -331,7 +329,7 @@
   left: 50%;
   top: 50%;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translate(-50%, -30%)scale(1);
+  transform: translate(-50%, -50%) scale(1);
   padding-bottom: 32px;
   padding-left: 20px;
   padding-right: 20px;
@@ -436,14 +434,13 @@
     top: -8%;
     width: 130px;
     height: 130px;
-     background-image: url('../images/modal_ingradients/ing.png');
+    background-image: url('../images/modal_ingradients/ing.png');
     background-repeat: no-repeat;
     background-size: cover;
-     @include retina {
+    @include retina {
       background-image: url('../images/modal_ingradients/ing@2x.png');
-    } 
+    }
   }
-
 }
 .products-modal-set {
   @extend %align-list;
@@ -495,7 +492,7 @@
   font-family: 'Montserrat';
   font-style: normal;
 
-  @include font (500, 12px, 28px, null);
+  @include font(500, 12px, 28px, null);
   color: var(--primary-text-color);
   @include tablet {
     width: 53px;
@@ -545,7 +542,7 @@
 .products-modal-data-title {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (400, 14px, 25px, .04em);
+  @include font(400, 14px, 25px, 0.04em);
   color: var(--primary-text-color);
 }
 .products-form {
@@ -587,7 +584,7 @@
 .products-form-texarea::placeholder {
   font-family: 'Montserrat';
   font-style: normal;
-  @include font (400, 14px, 20px, null);
+  @include font(400, 14px, 20px, null);
   color: var(--primary-text-color);
 }
 

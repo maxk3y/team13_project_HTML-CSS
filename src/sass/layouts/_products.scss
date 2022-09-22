@@ -404,6 +404,7 @@
   margin-bottom: 22px;
   @media screen and (max-width: 767px) {
     margin-top: 28px;
+    max-width: 142px;
   }
   @include tablet {
     margin-bottom: 24px;
@@ -414,7 +415,7 @@
   border: 1px solid var(--second-border-color);
   margin-top: 24px;
   border-radius: 50%;
-  width: 134px;
+  width: 132px;
   height: 130px;
   position: relative;
   background: linear-gradient(
@@ -432,7 +433,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: -10%;
+    top: -8%;
     width: 130px;
     height: 130px;
      background-image: url('../images/modal_ingradients/ing.png');
@@ -460,6 +461,7 @@
   @extend %align-list;
   justify-content: center;
   gap: 10px;
+  margin-top: 24px;
   @include tablet {
     gap: 20px;
   }
@@ -528,6 +530,9 @@
   align-items: center;
   text-align: center;
   color: var(--primary-text-color);
+  @include tablet {
+    margin-top: 48px;
+  }
 }
 .products-modal-data-item {
   display: flex;
